@@ -27,3 +27,9 @@ role :app, "git.handlino.com"                          # This may be the same as
 #     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
 #   end
 # end
+
+after 'deploy:symlink','deploy:cleanup'
+
+after :deploy do
+  run "ln -sf #{shared_path}/system/packages #{release_path}/compass.app"
+end
