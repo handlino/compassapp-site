@@ -9,7 +9,6 @@ set :deploy_to, "/home/www/compass.app"
 set :user, "railsapp"
 set :port, "723"
 set :copy_exclude, ".git"
-default_run_options[:pty] = true
 
 set :use_sudo, false
 role :web, "git.handlino.com"                          # Your HTTP server, Apache/etc
