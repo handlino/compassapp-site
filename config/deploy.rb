@@ -31,5 +31,5 @@ role :app, "git.handlino.com"                          # This may be the same as
 after 'deploy:symlink','deploy:cleanup'
 
 after :deploy do
-  run "ln -sf #{shared_path}/system/packages #{release_path}/compass.app"
+  run "ln -sf #{shared_path}/system/packages #{release_path}/public/compass.app"
 end
