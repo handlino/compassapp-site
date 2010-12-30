@@ -11,7 +11,8 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <title>Compass</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href='http://fonts.googleapis.com/css?family=Philosopher|Cabin:bold|Covered+By+Your+Grace' media="all" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Philosopher' media="all" rel="stylesheet" />
     <link href="/stylesheets/jquery.fancybox.css?v=1" media="all" rel="stylesheet" />
     <link href="/stylesheets/style.css?v=1" media="all" rel="stylesheet" />
     <script src="/javascripts/modernizr-1.6.min.js"></script>
@@ -20,44 +21,44 @@
     <div id="wrapper">
         <header id="header">
             <h1>Compass.app</h1>
-            <img src="images/sun.png" alt="sun" id="sun" />
+            <h2>Design Easily</h2>
         </header>
-
-        <section id="highlight">
-            <img src="/images/cloud-1.png" alt="*" id="cloud-right" width="188" height="90" />
-            <img src="/images/cloud-2.png" alt="*" id="cloud-left" width="160" height="77" />
-            <h2>Bring the Power of Compass to Designers?</h2>
-            <p>text description</p>
-        </section>
-
-        <section id="buy" class="clearfix">
-            <p class="description">Klassische Klebebindung, An end-to-end Web data crawling, extraction, and integration solution for supporting data gathering needs of enterprise customers. With the mission of providing semantic data-aware search, Cazoodle is focusing on the pressing demands of building "vertical".</p>
-            <aside>
+        <img src="/images/cloud-1.png" alt="*" id="cloud-right" width="188" height="90" />
+        <img src="/images/cloud-2.png" alt="*" id="cloud-left" width="160" height="77" />
+        <section class="clearfix">
+            <div id="highlight">
+                <p>Compass is a stylesheet authoring framework that makes your stylesheets and markup easier to build and maintain. With Compass.app, designers can easily compile compass stylesheets without resorting to command line interface. </p>
+            </div>
+            <div id="buy">
                 <a href="/" class="button">$7 Buy Now (Mac Version)</a>
                 <p class="available"><a href="/">Windows</a> and <a href="/">Linux</a> versions are also available</p>
                 <p>Version Number: <strong>1.0</strong></p>
-            </aside>
+            </div>
         </section>
 
         <section id="screenshot">
             <h2 class="title">Screenshot</h2>
             <ul class="menu clearfix">
-                <li><a rel="group" href="/images/screenshot/osx.png" title="OSX"><img src="images/screenshot/osx-thumb.png">OSX</a></li>
-                <li><a rel="group" href="/images/screenshot/windows.png" title="Windows"><img src="images/screenshot/windows-thumb.png">Windows</a></li>
-                <li><a rel="group" href="/images/screenshot/linux.png" title="Linux"><img src="images/screenshot/linux-thumb.png">Linux</a></li>
-                <li><a rel="group" href="/images/screenshot/project-list.png" title="Project list"><img src="images/screenshot/project-list-thumb.png">Project list</a></li>
-                <li><a rel="group" href="/images/screenshot/compass-install.png" title="Compass Install"><img src="images/screenshot/compass-install-thumb.png">Compass Install</a></li>
-                <li><a rel="group" href="/images/screenshot/growl-notify.png" title="OSX Growl notify"><img src="images/screenshot/growl-notify-thumb.png">OSX Growl notify</a></li>
+                <li><a rel="group" href="/images/screenshot/osx.jpg" title="OSX"><img src="images/screenshot/osx-thumb.jpg" width="300" height="140">OSX</a></li>
+                <li><a rel="group" href="/images/screenshot/windows.jpg" title="Windows"><img src="images/screenshot/windows-thumb.jpg" width="300" height="140">Windows</a></li>
+                <li><a rel="group" href="/images/screenshot/linux.jpg" title="Linux"><img src="images/screenshot/linux-thumb.jpg" width="300" height="140">Linux</a></li>
+                <li><a rel="group" href="/images/screenshot/project-list.jpg" title="Project list"><img src="images/screenshot/project-list-thumb.jpg" width="300" height="140">Project list</a></li>
+                <li><a rel="group" href="/images/screenshot/compass-install.jpg" title="Compass Install"><img src="images/screenshot/compass-install-thumb.jpg" width="300" height="140">Compass Install</a></li>
+                <li><a rel="group" href="/images/screenshot/growl-notify.jpg" title="OSX Growl notify"><img src="images/screenshot/growl-notify-thumb.jpg" width="300" height="140">OSX Growl notify</a></li>
             </ul>
         </section>
 
         <section id="container" class="clearfix">
             <article id="source">
                 <h2 class="title">Source / Release Notes</h2>
-                <p class="github"><a href="/">Source</a> & <a href="/">Release notes</a> is on github</p>
+                <p class="github">
+                    Compass.app is an open source project hosted on <a href="https://github.com/handlino/Compass">github</a>.  
+                    <a href="http://compass-style.org/">Compass</a> is a stylesheet authoring framework base on 
+                    <a href="http://sass-lang.com/">Sass</a>, an extension of CSS3.
+                </p>
             </article>
-        <aside id="contact">
-            <h2 class="title">Contact</h2>
+            <aside id="contact">
+                <h2 class="title">Contact</h2>
                 <dl class="clearfix">
                     <dt>Email</dt>
                     <dd>naimu at handlino.com</dd>
@@ -78,22 +79,19 @@
     <script type="text/javascript" src="/javascripts/app.js"></script>
     <!--[if lt IE 7 ]>
     <script type="text/javascript">
-    //<![CDATA[
         $.getScript("/javascripts/dd_belatedpng.js", function(){ DD_belatedPNG.fix("img, .png_bg"); });
-    //]]>
     </script>
     <![endif]-->
     <script type="text/javascript">
-    //<![CDATA[
-        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-        (function(d, t) {
-            var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-            g.async = true;
-            g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g, s);
-        })(document, 'script');
-    //]]>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2945555-15']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
 </body>
 </html>

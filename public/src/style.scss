@@ -1,33 +1,13 @@
-// First, set some default constants
 @import "partials/base";
 
-// Then we'll import the compass extension
-@import "html5-boilerplate";
-
-// Now you can choose to include the whole
-// enchilada by uncommeting this line
-//@include html5-boilerplate;
-
-// Or, you can pick and choose only the
-// sections you want to include
 @include html5-boilerplate-reset;
 @include html5-boilerplate-fonts;
-//@include html5-boilerplate-styles;
-//@include html5-boilerplate-helpers;
-//@include html5-boilerplate-media;
-
-// Or else, you can import this partial if you
-// want more controll over which mixins to use
-// @import "partials/example";
-
-// Finally, put your own styles in this partial
-// @import "partials/page";
 
 body {
     background: #f6f4f0;
-    margin: 0px;
-    font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
     color: #3f3728;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 a:link, a:visited {
@@ -45,6 +25,7 @@ a:hover, a:active {
 }
 
 #wrapper {
+    position: relative;
     margin: 0 auto;
     width: 940px;
 }
@@ -52,14 +33,16 @@ a:hover, a:active {
 /* `Menu
 -----------------------------------------------------------------------------*/
 
-.menu, .menu li {
+.menu {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
 
-.menu li {
-    float: left;
+    li {
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
 }
 
 /* `Header
@@ -67,73 +50,22 @@ a:hover, a:active {
 
 #header {
     padding-top: 60px;
-    height: 76px;
-    position: relative;
 }
 
 #header h1 {
-    background: url(../images/h1.png) left top no-repeat;
+    background: url(/images/h1.png) left top no-repeat;
     margin: 0;
     width: 349px;
     height: 57px;
     text-indent: -9999em;
 }
 
-#sun {
-    position: absolute;
-    right: 30px;
-    top: -15px;
-}
-
-/* `Section
------------------------------------------------------------------------------*/
-
-section {
-    background: url(../images/hr.png) left bottom no-repeat;
-    margin-bottom: 30px;
-    padding-bottom: 40px;
-}
-
-h2.title {
-    margin: 0 0 1em;
-    font-family: Philosopher, serif;
-    font-size: 197%;
-    color: #99583e;
-}
-
-#main {
-    float: left;
-    width: 600px;
-}
-
-aside {
-    float: right;
-    width: 300px;
-}
-
-/* `Highlight
------------------------------------------------------------------------------*/
-
-section#highlight {
-    background: url(../images/highlight.png) left top no-repeat;
-    margin-bottom: 40px;
-    padding: 90px 460px 0 60px;
-    height: 270px;
-    position: relative;
-}
-
-#highlight h2 {
-    margin: 0 0 0.5em;
-    font-family: 'Cabin', arial, serif;
-    font-size: 182%;
-    text-transform: uppercase;
+#header h2 {
+    margin: 40px 0;
+    font-family: 'Josefin Slab', arial, serif;
+    font-weight: 100;
+    font-size: 144px;
     color: #eeb948;  
-}
-
-#highlight p {
-    font-size: 116%;
-    color: #fff;
-    line-height: 1.5;
 }
 
 #cloud-right {
@@ -142,40 +74,59 @@ section#highlight {
     top: 50px;
 }
 
-#thanks #cloud-right {
-    right: 0px;
-    top: 0px;
-}
-
 #cloud-left {
     position: absolute;
-    left: -110px;
-    top: 170px;
+    left: -180px;
+    top: 160px;
 }
 
-#thanks #cloud-left {
-    left: 600px;
-    top: -100px;
-}
-
-/* `Buy Now
+/* `Section
 -----------------------------------------------------------------------------*/
 
-#buy .description {
+section {
+    background: url(/images/hr.png) left bottom no-repeat;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+h2.title {
+    margin: 0 0 1em;
+    font-family: Philosopher, serif;
+    font-size: 28px;
+    color: #99583e;
+}
+
+/* `Highlight
+-----------------------------------------------------------------------------*/
+
+#highlight {
     float: left;
-    margin-bottom: 0;
     width: 600px;
+}
+
+
+#highlight p {
+    font-size: 116%;
+    line-height: 1.5;
     font-family: Philosopher, serif;
     font-size: 116%;
     font-weight: bold;
     line-height: 1.4;
 }
 
-#buy aside p {
+/* `Buy Now
+-----------------------------------------------------------------------------*/
+
+#buy {
+    float: right;
+    width: 300px;
+}
+
+#buy p {
     margin-bottom: 0.3em;
 }
 
-#buy aside p a {
+#buy p a {
     font-weight: bold;
 }
 
@@ -220,9 +171,9 @@ section#highlight {
     display: block;
     border: 3px solid #fff;
     margin-bottom: 10px;
-        -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-        -moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-        box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
 }
 
 #screenshot a {
@@ -244,8 +195,9 @@ article {
     height: 160px;
 }
 
-aside#contact {
-    background: url(../images/article-separater.png) left top repeat-y;
+#contact {
+    float: right;
+    background: url(/images/article-separater.png) left top repeat-y;
     padding: 30px 0 0 30px;
     width: 280px;
     height: 160px;
@@ -253,7 +205,7 @@ aside#contact {
 
 #source .github {
     display: inline-block;
-    background: url(../images/icon-github.png) left center no-repeat;
+    background: url(/images/icon-github.png) left center no-repeat;
     padding-left: 40px;
     height: 27px;
     font-family: Philosopher, serif;
@@ -284,14 +236,12 @@ aside#contact {
 -----------------------------------------------------------------------------*/
 
 #thanks {
-    background: url(../images/thanks.jpg) left top no-repeat;
+    background: url(/images/thanks.jpg) left top no-repeat;
     padding: 120px 480px 0 80px;
     height: 380px;
-    position: relative; 
 
     h2 {
         margin: 0 0 0.3em;
-        font-family: 'Covered By Your Grace', arial, serif;
         font-size: 50px;
         color: #000;
         }

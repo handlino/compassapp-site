@@ -11,7 +11,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <title>Compass</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link href='http://fonts.googleapis.com/css?family=Philosopher|Cabin:bold|Covered+By+Your+Grace' media="all" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Philosopher' media="all" rel="stylesheet" />
     <link href="/stylesheets/jquery.fancybox.css?v=1" media="all" rel="stylesheet" />
     <link href="/stylesheets/style.css?v=1" media="all" rel="stylesheet" />
     <script src="/javascripts/modernizr-1.6.min.js"></script>
@@ -21,48 +21,38 @@
 
     <header id="header">
         <h1>Compass.app</h1>
-        <img src="images/sun.png" alt="sun" id="sun" />
     </header>
-    
+    <img src="/images/cloud-1.png" alt="*" id="cloud-right" width="188" height="90" />
+    <img src="/images/cloud-2.png" alt="*" id="cloud-left" width="160" height="77" />
     <section id="thanks">
-        <img src="/images/cloud-1.png" alt="*" id="cloud-right" width="188" height="90" />
-        <img src="/images/cloud-2.png" alt="*" id="cloud-left" width="160" height="77" />
         <h2>Thank you</h2>
-        <p>Hebe deine Diplomarbeit von der Masse ab und gestalte das Cover nach deinen Wünschen und Vorstellungen.</p>
+        <p>Please check mail for the download link..</p>
     </section>
     
     <footer id="footer">
-        <ul class="menu clearfix">
-            <li>&copy; 2010 <a href="http://handlino.com/">Handlino Inc.</a></li>
-            <li><a href="http://bingo.handlino.com/">和多繽紛樂</a></li>
-            <li><a href="http://more.handlino.com/">MoreText</a></li>
-            <li class="last"><a href="http://registrano.com/">Registrano, 你的活動線上報名系統</a></li>
-        </ul>
+        <p>Compass.app is brought to you by <a href="http://handlino.com/">Handlino Inc.</a></p>
     </footer>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/jquery.fancybox-1.3.4.js"></script>
-    <script type="text/javascript" src="/javascripts/jquery.easing-1.3.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.easing-1.2.js"></script>
     <script type="text/javascript" src="/javascripts/jquery.circulate.js"></script>
     <script type="text/javascript" src="/javascripts/app.js"></script>
     <!--[if lt IE 7 ]>
     <script type="text/javascript">
-    //<![CDATA[
         $.getScript("/javascripts/dd_belatedpng.js", function(){ DD_belatedPNG.fix("img, .png_bg"); });
-    //]]>
     </script>
     <![endif]-->
     <script type="text/javascript">
-    //<![CDATA[
-        var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
-        (function(d, t) {
-            var g = d.createElement(t),
-            s = d.getElementsByTagName(t)[0];
-            g.async = true;
-            g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g, s);
-        })(document, 'script');
-    //]]>
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-2945555-15']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
     </script>
 </body>
 </html>
