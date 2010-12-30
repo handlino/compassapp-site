@@ -9,20 +9,21 @@ $(function() {
         }
     });
 
-    $("#cloud-right").css("left", $("#cloud-right").position().left).circulate({
-        sizeAdjustment: 100,
-        speed: 3600,
-        width: -20,
-        height: 20,
+    $("#cloud-right").circulate({
+        speed: 3600,                  // Speed of each quarter segment of animation, 1000 = 1 second
+        height: 20,                 // Distance vertically to travel
+        width: -20,                  // Distance horizontally to travel
+        sizeAdjustment: 100,         // Percentage to grow or shrink
         loop: true,
-        zIndexValues: [1, 0, 50, 1]
+        zIndexValues: [1, 1, 1, 1]   // Sets z-index value at each stop of animation
     });
-    $("#cloud-left").css("left", $("#cloud-left").position().left).circulate({
-        sizeAdjustment: 80,
-        speed: 2400,
-        width: -50,
-        height: 50,
+
+    $("#cloud-left").circulate({
+        speed: 2400,                  // Speed of each quarter segment of animation, 1000 = 1 second
+        height: 50,                 // Distance vertically to travel
+        width: -50,                  // Distance horizontally to travel
+        sizeAdjustment: 80,         // Percentage to grow or shrink
         loop: true,
-        zIndexValues: [1, 0, 50, 1]
+        zIndexValues: [1, 1, 1, 1]   // Sets z-index value at each stop of animation
     });
 });
