@@ -1,0 +1,6 @@
+Thumbs.db
+.DS_Store
+*~
+*/output/*
+.sass-cache
+Gemfile.lock
