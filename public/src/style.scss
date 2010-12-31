@@ -7,7 +7,6 @@ body {
     background: #f6f4f0;
     color: #3f3728;
     margin: 0;
-    font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
 }
 
 a:link, a:visited {
@@ -18,10 +17,6 @@ a:link, a:visited {
 a:hover, a:active {
     color: #c24712;
     text-decoration: underline;
-}
-
-.clearfix {
-    @include pie-clearfix;
 }
 
 #wrapper {
@@ -87,12 +82,13 @@ section {
     background: url(/images/hr.png) left bottom no-repeat;
     margin-bottom: 30px;
     padding-bottom: 30px;
+    @include pie-clearfix;
 }
 
 h2.title {
-    margin: 0 0 1em;
-    font-family: Philosopher, serif;
-    font-size: 28px;
+    font-family: 'Philosopher', arial, serif;
+    margin: 0 0 0.5em;
+    font-size: 32px;
     color: #99583e;
 }
 
@@ -101,17 +97,14 @@ h2.title {
 
 #highlight {
     float: left;
-    width: 600px;
+    width: 640px;
 }
 
 
 #highlight p {
-    font-size: 116%;
+    font-size: 15px;
     line-height: 1.5;
-    font-family: Philosopher, serif;
-    font-size: 116%;
-    font-weight: bold;
-    line-height: 1.4;
+    margin-bottom: 1em;
 }
 
 /* `Buy Now
@@ -119,15 +112,7 @@ h2.title {
 
 #buy {
     float: right;
-    width: 300px;
-}
-
-#buy p {
-    margin-bottom: 0.3em;
-}
-
-#buy p a {
-    font-weight: bold;
+    width: 260px;
 }
 
 #buy .button {
@@ -136,34 +121,27 @@ h2.title {
     border: 1px solid #6a9421;
     margin-bottom: 5px;
     height: 40px;
-    font-size: 138.5%;
+    font-size: 18px;
     font-weight: bold;
     line-height: 40px;
     text-align: center;
     color: #fff;
     text-decoration: none;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.5);
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
+    @include text-shadow(rgba(0,0,0,0.5), 0, -1px, 0);
+    @include border-radius(5px);
 }
 
 #buy .button:hover {
-    background: url(../images/bg-button.png) left bottom repeat-x;
+    background-position: left bottom;
 }
 
 /* `Screenshot
 -----------------------------------------------------------------------------*/
 
-#screenshot {
-    margin-bottom: 0px;
-    width: 951px;
-}
-
 #screenshot li {
-    margin: 0 11px 20px 0;
+    margin: 0 6px 20px 0;
     text-align: center;
-    font-family: Philosopher, serif;
+    font-size: 15px;
     font-size: 116%;
 }
 
@@ -171,9 +149,7 @@ h2.title {
     display: block;
     border: 3px solid #fff;
     margin-bottom: 10px;
-    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.3);
-    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+    @include box-shadow(rgba(0,0,0,0.3), 0, 0, 4px);
 }
 
 #screenshot a {
@@ -208,9 +184,7 @@ article {
     background: url(/images/icon-github.png) left center no-repeat;
     padding-left: 40px;
     height: 27px;
-    font-family: Philosopher, serif;
-    font-size: 123.1%;
-    font-weight: bold;
+    font-size: 15px;
     line-height: 27px;
 }
 
