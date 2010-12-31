@@ -48,11 +48,15 @@ a:hover, a:active {
 }
 
 #header h1 {
-    background: url(/images/h1.png) left top no-repeat;
     margin: 0;
-    width: 349px;
-    height: 57px;
-    text-indent: -9999em;
+
+    a {
+        display: block;
+        background: url(/images/h1.png) left top no-repeat;
+        width: 349px;
+        height: 57px;
+        text-indent: -9999em;
+    }
 }
 
 #header h2 {
