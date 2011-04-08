@@ -52,7 +52,7 @@ a:hover, a:active {
 
     a {
         display: block;
-        background: url(/images/h1.png) left top no-repeat;
+        background: url(../images/h1.png) left top no-repeat;
         width: 349px;
         height: 57px;
         text-indent: -9999em;
@@ -212,6 +212,42 @@ article {
 
 #contact dd {
     margin-bottom: 5px;
+}
+
+/* `Faq
+-----------------------------------------------------------------------------*/
+
+#faq {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    section {
+        background: url(/images/hr.png) left bottom no-repeat;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        h3 {
+            background: url(/images/icon-lightbulb.png) left top no-repeat;
+            padding: 10px 150px 20px 70px;
+            font-family: 'Philosopher', arial, serif;
+            font-size: 22px;
+            color: #707125;
+        }
+        .bd {
+            padding: 0 150px 0 70px;
+            font-size:15px;
+            line-height:1.5;
+            p {
+                margin-bottom: 1em;
+            }
+            ul {
+                margin-left: 20px;
+            }
+        }
+    }
+    section:last-child {
+         margin-bottom: 0;
+    }
 }
 
 /* `Thanks
