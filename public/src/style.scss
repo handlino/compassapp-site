@@ -176,7 +176,7 @@ article {
     margin-right: 20px;
     padding-top: 30px;
     width: 600px;
-    height: 160px;
+    height: 200px;
 }
 
 #contact {
@@ -184,7 +184,7 @@ article {
     background: url(/images/article-separater.png) left top repeat-y;
     padding: 30px 0 0 30px;
     width: 280px;
-    height: 160px;
+    height: 200px;
 }
 
 #source .github {
@@ -194,10 +194,16 @@ article {
     height: 27px;
     font-size: 15px;
     line-height: 27px;
+    a {color: #58b1d0;}
 }
 
-#source .github a {
-    color: #58b1d0;
+#source .faq {
+    display: inline-block;
+    padding: 20px 0 0 40px;
+    height: 27px;
+    font-size: 15px;
+    line-height: 27px;
+    a {color: #58b1d0;}
 }
 
 #contact dl {
