@@ -1,0 +1,177 @@
+<!doctype html>
+<!--[if lt IE 8 ]><html class="ie"><![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link type="text/css" rel="stylesheet" href="stylesheets/application.css"/>
+    <title>網頁設計師的必備武器 Compass.app</title>
+	<script type="text/javascript" src="javascripts/shCore.js"></script>
+	<script type="text/javascript" src="javascripts/shBrushJScript.js"></script>
+	<link type="text/css" rel="stylesheet" href="stylesheets/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+</head>
+
+<body>
+<div id="wrapper">
+
+<h1>介紹</h1>
+<p><abbr title="Syntactically Awesome Stylesheets"><a href="http://sass-lang.com/" target="_blank">Sass</a></abbr> 語法是種可延伸的 CSS，讓撰寫 CSS 時能更有彈性也更有效率。<a href="http://beta.compass-style.org/" target="_blank">Compass</a> 則是將 Sass 包含在內，同時再納入許多 Framework 與相關功能讓網頁設計人員快速與簡便再加倍，然而 <a href="http://beta.compass-style.org/" target="_blank">Compass</a><a href="http://compass-style.org/" target="_blank" onclick="javascript:pageTracker._trackPageview ('/outbound/compass-style.org');"></a> 是一套需要 Ruby 環境以及依靠指令的工具，這對前端設計師頗具門檻，為了能跨平台並介紹給更多設計師使用，<a href="http://handlino.com" target="_blank" onclick="javascript:pageTracker._trackPageview ('/outbound/handlino.com');">和多</a>將 Compass 包成一套桌面應用程式，讓所有設計師都能輕易體驗這種輕鬆寫 code 的快感。</p>
+<h3>下載</h3>
+<p>你可以在 <a href="http://compass.handlino.com/" target="_blank">Compass.app</a> 網站購買並下載本桌面軟體，或是透過<a href="https://github.com/handlino/CompassApp/wiki/Help" target="_blank">幫助</a>找到你可能遇到的問題。</p>
+<h1>前置作業</h1>
+<h3>讓 Dreamweaver 看懂 Sass</h3>
+<p>Compass.app 延伸應用原理用的是 <abbr title="Syntactically Awesome Stylesheets"><a href="http://sass-lang.com/" target="_blank">Sass</a></abbr>，用 Dreamweaver 寫 css 的話最好先修改 MMDocumentTypes.xml 好讓 Dreamweaver 看的懂 Sass。以下是 Adobe CS4 的路徑<br>
+<em>&quot;C:\Program Files\Adobe\Adobe Dreamweaver CS4\configuration\DocumentTypes</em>&quot;</p>
+<ul>
+    <li>開啟 <strong>MMDocumentTypes.xml</strong></li>
+    <li>搜尋關鍵字 css 找到 <strong>winfileextension=&quot;css&quot; macfileextension=&quot;css&quot;</strong></li>
+    <li>將以上字串改成 <strong>winfileextension=&quot;css,scss&quot; macfileextension=&quot;css,scss&quot;</strong></li>
+</ul>
+<p>參考來源: <a href="http://www.visual28.com/articles/less-scss-syntax-highlighting-in-dreamweaver" target="_blank">LESS/SCSS Syntax Highlighting in Dreamweaver</a></p>
+<h3>執行</h3>
+<p>檔案下載回來解壓縮後放置在任何你想要的位置，Compass.app 並不需要進行安裝動作，每次執行只要點擊 compass-app.exe 即可啟動。</p>
+<h3>建立</h3>
+<p>啟動後在工具列可看見小圖示，點 compass 小圖來建立專案資料夾</p>
+<p class="caption"><img src="images/create.jpg"></p>
+<p>此時 Compass.app 會建立應用的相關檔案並 Watching 此資料夾，Watching 的用意在於針對此資料夾的 scss 檔案進行 compile 成為 css，而 scss 就是日後編輯練功之地。</p>
+<p class="caption"><img src="images/watching.jpg"><br>進行 Watching 時 icon 會變色</p>
+<p>進行到一半的專案也可以使用 compass.app，只要複製一份 .sass-cache 與 sass 到該專案資料夾中再進行 Watching 即可，這時 Compass.app 會自動生一份 compass_app_log.txt 對該專案進行動作的紀錄，在 Compass.app 選單的 History 也會出現該專案的名稱，但記得要將專案原本的 css 先更名保留一份（例如原本的 screen.css 先更名為 _screen.css），這樣 css 名稱與 sass 同名時才不會被覆蓋。</p>
+<p class="caption"><img src="images/folder.jpg"><br>編輯 screen.scss 存檔後 Compass.app 就會自動生出 screen.css 供網頁使用</p>
+<p>為了避免每次開新專案都要做一次個人習慣的前置作業環境，因此日後比較了解 Compass.app 後可以先建立個人的 folder，新專案開始只要複製一份進行 Watching 就可以開工了。</p>
+<h3>輔助工具</h3>
+<p>因為 sass 與 css 的程式碼行數並不對應，用 <a href="https://addons.mozilla.org/zh-tw/firefox/addon/firebug/" target="_blank">Firebug</a> 查問題不太方便，裝了 <a href="https://addons.mozilla.org/en-us/firefox/addon/firesass-for-firebug/" target="_blank"> Firesass</a> 後就可以直接觀看 sass 原始碼找問題。</p>
+<h3>備註</h3>
+<ul>
+    <li>HTML 吃的一樣還是 css，不是 scss。</li>
+    <li>編輯 scss 後要存檔讓 Compass.app 進行 compile，生出 css 後頁面上才看的到結果。</li>
+    <li>在 scss 中一樣可以納入一般的 css 沒問題。</li>
+    <li>基本功能已很好用，比較有門檻的部分可以慢慢摸。</li>
+</ul>
+<h1>應用</h1>
+<p><abbr title="Syntactically Awesome Stylesheets">Sass</abbr> 網站有一些<a href="http://sass-lang.com/tutorial.html" target="_blank">範例</a>可參考，還可以對照一下同樣的風格用 sass 與 css 差別在哪裡，而 Compass 網站也有許多<a href="http://beta.compass-style.org/reference/compass/">文件與範例</a>，或是在這直接看幾個基本的快速入門。</p>
+<h3>核心框架（Core Framework）</h3>
+<p>Compass 提供了許多強大的框架，需要時在 scss 裡 <strong>@import</strong> 後再 <strong>@include</strong> 進 style 即可</p>
+<pre class="brush: js;">
+@import "compass/reset";
+@import "compass/css3";
+
+button {
+    @include border-radius(10px);
+    @include box-shadow(rgba(0,0,0,0.5), 0 ,10px, 20px);
+}
+</pre>
+<p>除了可快速套用之外，css3 方面 Compass 會自動生出對應的程式碼（-moz, -webkit, -o）符合所有瀏覽器使用，當然 IE9 之前的版本 除外。</p>
+<p>至於要載入哪些框架全憑個人需求，<a href="http://beta.compass-style.org/reference/compass/" target="_blank">Core Framework </a>分為幾大類，之下還有許多小分類，偷懶的可以直接 @import "compass"; 通包。另外 Compass 還提供 Blueprint，詳細內容可參閱 <a href="http://beta.compass-style.org/reference/blueprint/">Compass Blueprint Module</a>。</p>
+<h3>巢狀結構（Nesting）</h3>
+<p>這應是最大特色了，巢狀結構好處是不需贅述父層名稱，讓層級複雜的結構一目瞭然直通到底。</p>
+<pre class="brush: js;">
+#header {
+    margin-bottom: 50px;
+    h1 {
+        font-size: 24px;
+        color: red;
+        a { display: block; }
+    }
+    ul.nav {
+        @include clearfix;
+        li { float:left; }
+    }
+}
+</pre>
+<p>另外對於偽元素也可以直接用“&amp;”符號來取代原本的選擇器名稱</p>
+<pre class="brush: js;">
+a {
+    color: #000;
+    text-decoration: none;
+    &amp;:visited {
+        color: #red;
+    }
+    &amp;:hover, &:active {
+        text-decoration: underline;
+    }
+}
+</pre>
+<p>關於 “&amp;” 的用法 <a href="http://twitter.com/#!/hlb" target="_blank">hlb</a> 還教了一個好用小技巧，因為 &amp; = 自己，所以在 ie hack 中可以這樣寫</p>
+<pre class="brush: js;">
+ul li {
+    background: url(transparent.png);
+    .ie6 & {
+        background: #ff0000;
+    }
+}
+</pre>
+<p>ie6 不支援 png 透明圖，所以 hack 直接給背景色。另外提供一個用 sass 寫的垂直置中 <a href="http://try-sass.heroku.com/" target="_blank">demo</a>。</p>
+<h3>變數（Variables）</h3>
+<p>Sass 提供的許多<a href="http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html" target="_blank">函數</a>。雖然 <a href="http://twitter.com/#!/hlb" target="_blank">hlb</a> 有大概跟我解釋了一下這部分在色彩上的妙用，但個人覺得實用的部分還是在於可一次定義網頁中的通用或標準色，或是區塊通用間距之類的，尤其在大型專案中會是管理色彩的好幫手。</p>
+<pre class="brush: js;">
+$cis: #f90;
+$margin: 20px;
+
+#header {
+  background: $cis;
+}
+
+a, h1, h2, h3, h4, h5 {
+    color: $cis;
+}
+
+.section {
+    padding: $margin / 2;
+    margin-bottom: $margin;
+}
+</pre>
+<p>假設企業標準色是橘色 #f90，在 header 背景色、連結、標題甚至其它地方都希望沿用，那用 &quot;$&quot; 定義後即可大量套用在所有希望使用該色碼的地方，如果企業突然決定改用其它顏色也不用麻煩的一個一個修改。</p>
+<p>而 margin、padding 也可以用這種方式定義。原始碼中 “padding: <strong>$margin / 2</strong>;” 等於 20px 的 1/2 = 10px，有趣吧，只是不確定有沒有機會真的用到 XD</p>
+<h3>選擇繼承（Selector Inheritance）</h3>
+<p>相當好用可以多多益善的功能，運用得當可以省下許多工</p>
+<pre class="brush: js;">
+.main {
+    border: 1px #000;
+    background: #eee;
+}
+.main.article {
+    font-size: 13px;
+    color: #333;
+}
+
+.sidebar {
+    @extend .main;
+    background: #fff;
+}
+</pre>
+<p>運用 <strong>@extend</strong> 的方式將某一寫好的樣式直接套用進另外一組選擇器中使用，以上 scss 就會生出</p>
+<pre class="brush: js;">
+.main, .sidebar {
+    border: 1px #000;
+    background: #eee;
+}
+.main.article, .sidebar.article {
+    font-size: 13px;
+    color: #333;
+}
+
+.sidebar {
+    background: #fff;
+}
+</pre>
+<p><strong>@extend</strong> 好處是很多面的，個中滋味值得細細品嘗，在這就不一一贅述 :P</p>
+<h3>混合（Mixins）</h3>
+<p>Mixins 根據<a href="http://sass-lang.com/tutorial.html" target="_blank">介紹</a>功能有點類似變數，同樣是為了方便管理，但可定義的範圍更廣，使用方法是定義好之後再用 <strong>@include</strong> 的方式載入</p>
+<pre class="brush: js;">
+@mixin rounded-top {
+    $side: top;
+    $radius: 10px;
+    
+    border-#{$side}-radius: $radius;
+    -moz-border-radius-#{$side}: $radius;
+    -webkit-border-#{$side}-radius: $radius;
+}
+
+#navbar li { @include rounded-top; }
+#footer { @include rounded-top; }
+</pre>
+<p>這是 Sass 官方的範例，宣告 <strong>@mixin</strong> 後加進變數再套進圓角框，需要的再 <strong>@include</strong> 載入使用。除此之外還有更多種用法，不過看來得詳讀文件<a href="http://sass-lang.com/docs/yardoc/_index.html" target="_blank"> Sass Documentation</a> 後才能深入的靈活運用。</p>
+</div>
+</body>
+</html>
