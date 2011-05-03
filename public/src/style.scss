@@ -48,11 +48,15 @@ a:hover, a:active {
 }
 
 #header h1 {
-    background: url(/images/h1.png) left top no-repeat;
     margin: 0;
-    width: 349px;
-    height: 57px;
-    text-indent: -9999em;
+
+    a {
+        display: block;
+        background: url(../images/h1.png) left top no-repeat;
+        width: 349px;
+        height: 57px;
+        text-indent: -9999em;
+    }
 }
 
 #header h2 {
@@ -65,7 +69,7 @@ a:hover, a:active {
 
 #cloud-right {
     position: absolute;
-    left: 880px;
+    left: 760px;
     top: 50px;
 }
 
@@ -172,7 +176,7 @@ article {
     margin-right: 20px;
     padding-top: 30px;
     width: 600px;
-    height: 160px;
+    height: 200px;
 }
 
 #contact {
@@ -180,7 +184,7 @@ article {
     background: url(/images/article-separater.png) left top repeat-y;
     padding: 30px 0 0 30px;
     width: 280px;
-    height: 160px;
+    height: 200px;
 }
 
 #source .github {
@@ -190,10 +194,16 @@ article {
     height: 27px;
     font-size: 15px;
     line-height: 27px;
+    a {color: #58b1d0;}
 }
 
-#source .github a {
-    color: #58b1d0;
+#source .faq {
+    display: inline-block;
+    padding: 20px 0 0 40px;
+    height: 27px;
+    font-size: 15px;
+    line-height: 27px;
+    a {color: #58b1d0;}
 }
 
 #contact dl {
@@ -208,6 +218,42 @@ article {
 
 #contact dd {
     margin-bottom: 5px;
+}
+
+/* `Faq
+-----------------------------------------------------------------------------*/
+
+#faq {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    height: auto;
+    section {
+        background: url(/images/hr.png) left bottom no-repeat;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        h3 {
+            background: url(/images/icon-lightbulb.png) left top no-repeat;
+            padding: 10px 150px 20px 70px;
+            font-family: 'Philosopher', arial, serif;
+            font-size: 22px;
+            color: #707125;
+        }
+        .bd {
+            padding: 0 150px 0 70px;
+            font-size:15px;
+            line-height:1.5;
+            p {
+                margin-bottom: 1em;
+            }
+            ul {
+                margin-left: 20px;
+            }
+        }
+    }
+    section:last-child {
+         margin-bottom: 0;
+    }
 }
 
 /* `Thanks

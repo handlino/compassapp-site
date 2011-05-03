@@ -1,0 +1,117 @@
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.6.0
+*/
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+body {
+	font:13px/1.231 arial,helvetica,clean,sans-serif;
+	*font-size:small; /* for IE */
+	*font:x-small; /* for IE in quirks mode */
+}
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */ 
+select,
+input,
+button,
+textarea {
+	font:99% arial,helvetica,clean,sans-serif;
+}
+
+/**
+ * To help tables remember to inherit
+ */
+table {
+	font-size:inherit;
+	font:100%;
+}
+
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.7.0
+*/
+body{margin:10px;}h1{font-size:138.5%;}h2{font-size:123.1%;}h3{font-size:108%;}h1,h2,h3{margin:1em 0;}h1,h2,h3,h4,h5,h6,strong,dt{font-weight:bold;}optgroup{font-weight:normal;}abbr,acronym{border-bottom:1px dotted #000;cursor:help;}em{font-style:italic;}del{text-decoration:line-through;}blockquote,ul,ol,dl{margin:1em;}ol,ul,dl{margin-left:2em;}ol li{list-style:decimal outside;}ul li{list-style:disc outside;}dl dd{margin-left:1em;}th,td{border:1px solid #000;padding:.5em;}th{font-weight:bold;text-align:center;}caption{margin-bottom:.5em;text-align:center;}sup{vertical-align:super;}sub{vertical-align:sub;}p,fieldset,table,pre{margin-bottom:1em;}button,input[type="checkbox"],input[type="radio"],input[type="reset"],input[type="submit"]{padding:1px;}
+
+
+
+/* `Base
+-----------------------------------------------------------------------------*/
+
+body {
+    margin: 0px;
+    font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+    font-size:13px;
+    color: #555;
+    line-height:1.6;
+}
+
+a:link, a:visited {
+    color: #2389f2;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color: #2389f2;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display:inline-block;
+}
+/* Hide from IE Mac \*/
+
+.clearfix {
+    display:block;
+}
+/* End hide from IE Mac */
+
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.caption {
+    display:inline-block;
+    background:#f8f8f8;
+    border:1px solid #ddd;
+    padding:10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+h1 { color:#e9247c; }
+h2, strong { color:#000; }
+h3 { color:#000;}
