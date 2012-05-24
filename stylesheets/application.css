@@ -6187,69 +6187,14 @@ button.close {
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/fancybox/fancy_shadow_nw.png', sizingMethod='scale');
 }
 
-/*
-Copyright (c) 2011, Yahoo! Inc. All rights reserved.
-Code licensed under the BSD License:
-http://developer.yahoo.com/yui/license.html
-version: 2.9.0
-*/
-/**
- * YUI Fonts
- * @module fonts
- * @namespace yui-
- * @requires 
- */
-/**
- * Percents could work for IE, but for backCompat purposes, we are using keywords.
- * x-small is for IE6/7 quirks mode.
- */
-body {
-  font: 13px/1.231 arial, helvetica, clean, sans-serif;
-  /* for IE6/7 */
-  *font-size: small;
-  /* for IE Quirks Mode */
-  *font: x-small;
-}
-
-/**
- * Nudge down to get to 13px equivalent for these form elements
- */
-select,
-input,
-textarea,
-button {
-  font: 99% arial,helvetica,clean,sans-serif;
-}
-
-/**
- * To help tables remember to inherit
- */
-table {
-  font-size: inherit;
-  font: 100%;
-}
-
-/**
- * Bump up IE to get to 13px equivalent for these fixed-width elements
- */
-pre,
-code,
-kbd,
-samp,
-tt {
-  font-family: monospace;
-  *font-size: 108%;
-  line-height: 100%;
-}
-
 /* `Base
 -----------------------------------------------------------------------------*/
 html {
-  background: #101010 url('/images/bg-header.jpg?1337834625') center top no-repeat;
+  background: #101010 url('/images/bg-header.jpg?1336397781') center top no-repeat;
 }
 
 body {
-  background: url('/images/bg.png?1337834625') left top repeat;
+  background: url('/images/bg.png?1336399091') left top repeat;
   margin: 0;
   font: 15px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
@@ -6326,7 +6271,7 @@ h2.title {
 /* `Header
 -----------------------------------------------------------------------------*/
 .navbar {
-  background: rgba(0, 0, 0, 0.2) url('/images/bg-navbar.png?1337834625') left top repeat-x;
+  background: rgba(0, 0, 0, 0.2) url('/images/bg-navbar.png?1336532460') left top repeat-x;
   font-family: 'Bree Serif', serif;
   color: #bfbfbf;
 }
@@ -6388,7 +6333,7 @@ header h1 {
 }
 header h1 a {
   display: inline-block;
-  background: url('/images/h1.png?1337834625') center top no-repeat;
+  background: url('/images/h1.png?1336446432') center top no-repeat;
   height: 89px;
   width: 446px;
   text-indent: -9999em;
@@ -6472,10 +6417,10 @@ header h1 a {
 /* `Content
 -----------------------------------------------------------------------------*/
 .content {
-  background: #f5f5f5 url('/images/bg-content.png?1337834625') left top repeat;
+  background: #f5f5f5 url('/images/bg-content.png?1336403949') left top repeat;
 }
 .content .container {
-  background: url('/images/bg-grid-60.png?1337834625') left top repeat;
+  background: url('/images/bg-grid-60.png?1336537586') left top repeat;
   border-right: 1px solid #e6e6e6;
   padding: 78px 0 26px;
 }
@@ -6500,12 +6445,12 @@ header h1 a {
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  background: rgba(255, 255, 255, 0.5) url('/images/fireapp.png?1337834625') center 10px no-repeat;
+  background: rgba(255, 255, 255, 0.5) url('/images/fireapp.png?1336457692') center 10px no-repeat;
   margin: 0 0 0 1px;
   padding: 78px 60px 25px;
 }
 .product .inner:hover {
-  background: rgba(255, 255, 255, 0.8) url('/images/fireapp.png?1337834625') center 10px no-repeat;
+  background: rgba(255, 255, 255, 0.8) url('/images/fireapp.png?1336457692') center 10px no-repeat;
 }
 .product .inner p {
   margin: 0;
@@ -6513,7 +6458,7 @@ header h1 a {
 
 .features ul li {
   float: none;
-  background: url('/images/icon-plus.png?1337834625') 12px 9px no-repeat;
+  background: url('/images/icon-plus.png?1336449393') 12px 9px no-repeat;
   padding-left: 32px;
 }
 
@@ -6540,7 +6485,7 @@ header h1 a {
 }
 .recommendation ul blockquote {
   display: inline-block;
-  background: url('/images/quote.png?1337834625') left top no-repeat;
+  background: url('/images/quote.png?1336462233') left top no-repeat;
   border: 0;
   margin: 0;
   padding: 0 0 0 32px;
@@ -6643,7 +6588,7 @@ footer {
   }
 
   .content .container {
-    background: url('/images/bg-grid-42.png?1337834625') left top repeat;
+    background: url('/images/bg-grid-42.png?1336537565') left top repeat;
   }
 
   .product .inner {
