@@ -302,6 +302,17 @@ footer {
     font-family: 'Bree Serif', serif;
     color:#969696;
     .container a { @extend .dark-link; }
+    a.btn {
+        font-family: 'Bree Serif', serif;
+        padding:0;
+        width:219px;
+        height:51px;
+        line-height:51px;
+        text-align:center;
+        color:#000;
+        i { margin-right:5px; }
+        &:hover { color:#000; }
+    }
 }
 
 /* `Media
@@ -370,12 +381,15 @@ footer {
             }
         }
     }
+    footer {
+        a.btn { width:165px; }
+    }
 }
 
 @media (max-width: 767px) {
     body { padding:0; }
     .container { width:480px; }
-    .container-inner { padding-left:20px; padding-right:20px; }
+    .container-inner, footer .container { padding-left:20px; padding-right:20px; }
     .content {
         .container {
             background:transparent;
@@ -409,6 +423,9 @@ footer {
                 height:73px;
             }
         }
+    }
+    footer .container {
+        .span9, .span3 { margin-bottom:26px; }
     }
 }
 
