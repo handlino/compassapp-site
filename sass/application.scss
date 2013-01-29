@@ -120,13 +120,11 @@ header {
     }
     h1 {
         margin-bottom:12px;
-        a {
-            display:inline-block;
-            background:image-url("h1.png") center top no-repeat;
-            height:89px;
-            width:446px;
-            text-indent:-9999em;
-        }
+        margin: 0 auto;
+        background:image-url("h1.png") center top no-repeat;
+        height:89px;
+        width:446px;
+        text-indent:-9999em;
     }
 }
 
