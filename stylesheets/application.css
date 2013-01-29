@@ -5968,11 +5968,11 @@ button.close {
 /* `Base
 -----------------------------------------------------------------------------*/
 html {
-  background: #101010 url('/images/bg-header.jpg?1357572716') center top no-repeat;
+  background: #101010 url('/images/bg-header.jpg?1359476201') center top no-repeat;
 }
 
 body {
-  background: url('/images/bg.png?1357572716') left top repeat;
+  background: url('/images/bg.png?1359476201') left top repeat;
   margin: 0;
   font: 15px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
@@ -6041,6 +6041,7 @@ h2.title {
 .span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11, .span12 {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -6048,7 +6049,7 @@ h2.title {
 /* `Header
 -----------------------------------------------------------------------------*/
 .navbar {
-  background: rgba(0, 0, 0, 0.2) url('/images/bg-navbar.png?1357572716') left top repeat-x;
+  background: rgba(0, 0, 0, 0.2) url('/images/bg-navbar.png?1359476201') left top repeat-x;
   font-family: "Bree Serif", serif;
   color: #bfbfbf;
 }
@@ -6107,10 +6108,8 @@ header .inner {
 }
 header h1 {
   margin-bottom: 12px;
-}
-header h1 a {
-  display: inline-block;
-  background: url('/images/h1.png?1357572716') center top no-repeat;
+  margin: 0 auto;
+  background: url('/images/h1.png?1359476201') center top no-repeat;
   height: 89px;
   width: 446px;
   text-indent: -9999em;
@@ -6129,6 +6128,7 @@ header h1 a {
   background-image: -webkit-linear-gradient(#83c314, #689022);
   background-image: -moz-linear-gradient(#83c314, #689022);
   background-image: -o-linear-gradient(#83c314, #689022);
+  background-image: -ms-linear-gradient(#83c314, #689022);
   background-image: linear-gradient(#83c314, #689022);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#83c314, endColorstr=#689022);
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px, rgba(255, 255, 255, 0.4) 0 1px 0 inset;
@@ -6160,6 +6160,7 @@ header h1 a {
   background-image: -webkit-linear-gradient(#699221, #4d7409);
   background-image: -moz-linear-gradient(#699221, #4d7409);
   background-image: -o-linear-gradient(#699221, #4d7409);
+  background-image: -ms-linear-gradient(#699221, #4d7409);
   background-image: linear-gradient(#699221, #4d7409);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#699221, endColorstr=#4d7409);
   -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0 2px 0, rgba(255, 255, 255, 0.2) 0 1px 0 inset;
@@ -6192,10 +6193,10 @@ header h1 a {
 /* `Content
 -----------------------------------------------------------------------------*/
 .content {
-  background: whitesmoke url('/images/bg-content.png?1357572716') left top repeat;
+  background: whitesmoke url('/images/bg-content.png?1359476201') left top repeat;
 }
 .content .container {
-  background: url('/images/bg-grid-60.png?1357572716') left top repeat;
+  background: url('/images/bg-grid-60.png?1359476201') left top repeat;
   border-right: 1px solid #e6e6e6;
   padding: 78px 0 26px;
 }
@@ -6217,14 +6218,15 @@ header h1 a {
 .product .inner {
   -webkit-transition: all 0.15s ease-in-out;
   -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  background: rgba(255, 255, 255, 0.5) url('/images/fireapp.png?1357572716') center 10px no-repeat;
+  background: rgba(255, 255, 255, 0.5) url('/images/fireapp.png?1359476201') center 10px no-repeat;
   margin: 0 0 0 1px;
   padding: 78px 60px 25px;
 }
 .product .inner:hover {
-  background: rgba(255, 255, 255, 0.8) url('/images/fireapp.png?1357572716') center 10px no-repeat;
+  background: rgba(255, 255, 255, 0.8) url('/images/fireapp.png?1359476201') center 10px no-repeat;
 }
 .product .inner p {
   margin: 0;
@@ -6232,7 +6234,7 @@ header h1 a {
 
 .features ul li {
   float: none;
-  background: url('/images/icon-plus.png?1357572716') 12px 9px no-repeat;
+  background: url('/images/icon-plus.png?1359476201') 12px 9px no-repeat;
   padding-left: 32px;
 }
 
@@ -6259,7 +6261,7 @@ header h1 a {
 }
 .recommendation ul blockquote {
   display: inline-block;
-  background: url('/images/quote.png?1357572717') left top no-repeat;
+  background: url('/images/quote.png?1359476201') left top no-repeat;
   border: 0;
   margin: 0;
   padding: 0 0 0 32px;
@@ -6377,7 +6379,7 @@ footer a.btn:hover {
   }
 
   .content .container {
-    background: url('/images/bg-grid-42.png?1357572716') left top repeat;
+    background: url('/images/bg-grid-42.png?1359476201') left top repeat;
   }
 
   .product .inner {
