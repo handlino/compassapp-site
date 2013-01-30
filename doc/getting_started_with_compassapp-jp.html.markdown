@@ -2,11 +2,11 @@
 
 Compass.app は Sass と Compass が使いたいですが、コマンドラインで設定するのは大変と思っている方のために作ったGUIツールです。 Windows / Mac OS / Linux 全てに対応しています。 インストールも必要ない、シンプルなツールです。
 
-[Compass.app のオフィシャルサイト](http://compass.handlino.com/)で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 OS に対応したのをダウンロードして、そして ZIP フアィルを解凍してください。
+[Compass.app のオフィシャルサイト](http://compass.handlino.com/)で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 OS に対応したのをダウンロードして、そして ZIP ファイルを解凍してください。
 
 
 ### Windows
-解凍したのは、 Compass.app が必要なフアィルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 Compass-app.exe をクリックして起動しますと、タスクトレイにグレーアイコンが表示されます。
+解凍したのは、 Compass.app が必要なファイルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 Compass-app.exe をクリックして起動しますと、タスクトレイにグレーアイコンが表示されます。
 
 
 ![Windows](windows.jpg)
@@ -18,7 +18,7 @@ Compass.app は Sass と Compass が使いたいですが、コマンドライ�
 ![Mac OS](osx.jpg)
 
 ### Linux
-解凍したのは、 Compass.app が必要なフアィルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。
+解凍したのは、 Compass.app が必要なファイルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。
 
 
 ![Linux](linux.jpg)
@@ -28,11 +28,11 @@ Compass.app は Sass と Compass が使いたいですが、コマンドライ�
 
 ## プロジェクトを作成
 
-シンプルな compass プロジェクトを例にします。 Compass.app を起動し、アイコンをクリックして、"Create Compass Project" -> "compass" -> "project" を順番に選んで、そしてプロジェクトの名前を入力してセーフします。
+シンプルな compass プロジェクトを例にします。 Compass.app を起動し、アイコンをクリックして、"Create Compass Project" -> "compass" -> "project" を順番に選んで、そしてプロジェクトの名前を入力してセーブします。
 
 ![dialog window](create-project.png)
 
-セーフした後、作成成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを "Watch" しているの意味です。
+セーブした後、作成成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを "Watch" しているの意味です。
 
 プロジェクトフォルダの構成は以下のようになっています：
 
