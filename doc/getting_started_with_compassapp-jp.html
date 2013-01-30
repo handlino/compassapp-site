@@ -66,40 +66,40 @@
                     
     <p><a href="/doc/">&larr; documentation</a></p>
     
-    <h1 id="compassapp">Compass.app</h1>
+    <h1 id="compassapp">Compass.appの使い方</h1>
 
-<p>Compass.app は Sass と Compass が使いたいですが、コマンドラインで設定するのは大変と思っている方のために作ったGUIツールです。 Windows / Mac OS / Linux 全てに対応しています。 インストールも必要ない、シンプルなツールです。</p>
+<p>Compass.app は Sass と Compass が使いたいけど、コマンドラインを操作するのに抵抗を感じているという方のために作ったGUIツールです。 Windows / Mac OS / Linux 全てに対応しています。 インストールも必要ない、シンプルなツールです。</p>
 
-<p><a href="http://compass.handlino.com/">Compass.app のオフィシャルサイト</a>で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 OS に対応したのをダウンロードして、そして ZIP ファイルを解凍してください。</p>
+<p><a href="http://compass.handlino.com/">Compass.app のオフィシャルサイト</a>で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 お持ちの OS に対応したものをダウンロードして、ZIP ファイルを解凍してください。</p>
 
 <h3 id="windows">Windows</h3>
-<p>解凍したのは、 Compass.app が必要なファイルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 Compass-app.exe をクリックして起動しますと、タスクトレイにグレーアイコンが表示されます。</p>
+<p>Compass.app に必要なファイルが入ったフォルダが解凍されたら、このフォルダを好きな所に配置して下さい（Dropbox に置いても大丈夫です）。 Compass-app.exe をクリックして起動すると、タスクトレイにグレーアイコンが表示されます。</p>
 
-<p><img src="windows.jpg" alt="Windows" /></p>
+<p><img src="http://compass.handlino.com/doc/windows.jpg" alt="Windows" /></p>
 
 <h3 id="mac-os">Mac OS</h3>
-<p>解凍したのは、 Compass.app です、好きな所に配置してください。 Dropbox に置いても大丈夫です。 Compass.app をクリックして起動しますと、メニューバーにグレーアイコンが表示されます。</p>
+<p>解凍されたCompass.appを、好きな所に配置してください（Dropbox に置いても大丈夫です）。 Compass.app をクリックして起動すると、メニューバーにグレーアイコンが表示されます。</p>
 
-<p><img src="osx.jpg" alt="Mac OS" /></p>
+<p><img src="http://compass.handlino.com/doc/osx.jpg" alt="Mac OS" /></p>
 
 <h3 id="linux">Linux</h3>
-<p>解凍したのは、 Compass.app が必要なファイルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。</p>
+<p>Compass.app に必要なファイルが入ったフォルダが解凍されたら、このフォルダを好きな所に配置して下さい（Dropbox に置いても大丈夫です）。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。</p>
 
-<p><img src="linux.jpg" alt="Linux" /></p>
+<p><img src="http://compass.handlino.com/doc/linux.jpg" alt="Linux" /></p>
 
-<p><strong>*注: Compass.app は JAVA で開発したので、起動は数秒かかります。お待ちになってください。</strong></p>
+<p><strong>注: Compass.app は JAVA で開発した為、起動には多少時間がかかります。数秒ほどお待ちください。</strong></p>
 
 <h2 id="section">プロジェクトを作成</h2>
 
-<p>シンプルな compass プロジェクトを例にします。 Compass.app を起動し、アイコンをクリックして、&quot;Create Compass Project&quot; -&gt; &quot;compass&quot; -&gt; &quot;project&quot; を順番に選んで、そしてプロジェクトの名前を入力してセーブします。</p>
+<p>シンプルな compass プロジェクトを例に説明します。 Compass.app を起動し、アイコンをクリックして、&quot;Create Compass Project&quot; -&gt; &quot;compass&quot; -&gt; &quot;project&quot; を順番に選び、プロジェクトの名前を入力して保存します。</p>
 
-<p><img src="create-project.png" alt="dialog window" /></p>
+<p><img src="http://compass.handlino.com/doc/create-project.png" alt="dialog window" /></p>
 
-<p>セーブした後、作成成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを &quot;Watch&quot; しているの意味です。</p>
+<p>保存した後、プロジェクト作成の成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを &quot;Watch&quot; しているという意味です。</p>
 
 <p>プロジェクトフォルダの構成は以下のようになっています：</p>
 
-<p><img src="project-folder.png" alt="project folder" /></p>
+<p><img src="http://compass.handlino.com/doc/project-folder.png" alt="project folder" /></p>
 
 <pre><code>awesome-website/
   - sass/
@@ -108,57 +108,58 @@
   - stylesheets/
     - ...
   - .sass-cache/   // 隠し sass cache フォルダです。触れないでください。
-  - config.rb      // Compass 設定フアィルです。削除しないでください。
+  - config.rb      // Compass 設定ファイルです。削除しないでください。
 </code></pre>
 
-<p>そしてお気に入りの IDE でプロジェクトを編集ができます。 SCSS と Sass フアィルが保存の際自動的に CSS にコンパイルされます。</p>
+<p>これでお気に入りの IDE でプロジェクトが編集できます。 SCSS や Sass ファイルを保存するたびに、自動的に CSS にコンパイルされます。</p>
 
 <h2 id="preferences-">Preferences 解説</h2>
-<p>Compass.app アイコンをクリックして &quot;Preferences&quot; を選びますと、いろんな設定ができます。</p>
+<p>Compass.app アイコンをクリックして &quot;Preferences&quot; を選ぶと、いろんな設定ができます。</p>
 
 <h3 id="compass">Compass</h3>
 
-<p><img src="preference-compass.png" alt="Compass" /></p>
+<p><img src="http://compass.handlino.com/doc/preference-compass.png" alt="Compass" /></p>
 
 <ul>
   <li>
-    <p>Preferred Syntax:
-Sass には SCSS (.scss) と Sass (indented syntax, .sass) という2種類のシンタックスがあります。 Compass.app で両方も使えます。ここで選ぶのはプロジェクト作成する時、テンプレートのシンタックスです。</p>
+    <p>Preferred Syntax: <br />
+Sass には SCSS (.scss) と Sass (indented syntax, .sass) という2種類のシンタックスがあります。 Compass.app ではこの両方が使えます。プロジェクトを作成する時、ここでテンプレートのシンタックスを選択してください。</p>
   </li>
   <li>
-    <p>Compass Version:
-Compass.app の初期値は <a href="http://compass-style.org/CHANGELOG/"> Compass の最新安定版バージョン</a> を使用しています。もし他の Sass / Compass ヴァージョンが使いたいおよび RubyGems でパッケージ管理したい場合はら、 &quot;Custom&quot; を選んでください。<strong>注意！上級ユーザーのみにお勧めしています！</strong></p>
+    <p>Compass Version: <br />
+Compass.app のデフォルトは <a href="http://compass-style.org/CHANGELOG/"> Compass の最新安定版バージョン</a> を使用しています。もし他の Sass / Compass バージョンが使いたい場合、および RubyGems でパッケージ管理したい場合は、 &quot;Custom&quot; を選んでください。
+<strong>注意！上級ユーザーのみにお勧めします！</strong></p>
   </li>
 </ul>
 
 <h3 id="notification">Notification</h3>
 
-<p><img src="preference-notification.png" alt="Notification" /></p>
+<p><img src="http://compass.handlino.com/doc/preference-notification.png" alt="Notification" /></p>
 
-<p>Compass.app は <a href="http://growl.info/">Growl</a> に対応していますので、欲しいメッセージタイプを選べます。デバッグのためのログ出力もできます。</p>
+<p>Compass.app は <a href="http://growl.info/">Growl</a> に対応しているので、好きなメッセージタイプを選べます。デバッグのためのログ出力もできます。 </p>
 
 <h3 id="services">Services</h3>
 
-<p><img src="preference-services.png" alt="Services" /></p>
+<p><img src="http://compass.handlino.com/doc/preference-services.png" alt="Services" /></p>
 
-<p><strong>Enable Web Server:</strong>
-ここにチェックしますと、 Compass.app はプロジェクトパスで軽量 Web サーバ (WEBrick) を起動します。ブラウザに <code>http://localhost:24680</code> を入力しますと、実際のプロジェクトページが見えます。ポートの初期値は変更可能です。</p>
+<p><strong>Enable Web Server:</strong> <br />
+ここにチェックを入れると、 Compass.app からプロジェクトパスで軽量 Web サーバ (WEBrick) を起動できます。ブラウザに <code>http://localhost:24680</code> と入力すると、実際のプロジェクトページを見ることができます。ポート番号のデフォルト値は変更可能です。</p>
 
-<p><strong>Enable LiveReload:</strong>
-Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を使用するとファイルを保存した時に自動でブラウザをオートリロードします。ご利用にはブラウザエクステンションのインストールが必要です。 Web サーバと LiveReload 両方もチェックしますと、 &quot;<a href="https://github.com/livereload/livereload-js">LiveReload.js</a>&quot;　が使えられます。(@livereload によりMITライセンスで公開されて、感謝しています。) <a href="http://livereload.com/">LiveReload 2</a>もお勧めです。</p>
+<p><strong>Enable LiveReload:</strong> <br />
+Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を使用するとファイルを保存した時に自動でブラウザをオートリロードします。ご利用にはブラウザエクステンションのインストールが必要です。 Web サーバと LiveReload を両方チェックすると、 &quot;<a href="https://github.com/livereload/livereload-js">LiveReload.js</a>&quot;　が使えます。(@livereload によりMITライセンスで公開されているものを利用させていただいてます。感謝しています。) <a href="http://livereload.com/">LiveReload 2</a>もお勧めです。</p>
 
 <ul>
   <li><a href="http://help.livereload.com/kb/general-use/browser-extensions">LiveReloadブラウザエクステンション</a></li>
-  <li>古いヴァージョン：
+  <li>古いバージョン：
     <ul>
-      <li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>.</li>
+      <li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>. </li>
       <li><a href="https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
       <li><a href="https://addons.mozilla.org/zh-TW/firefox/addon/livereload/">Firefox</a></li>
     </ul>
   </li>
 </ul>
 
-<p>もしブラウザエクステンションを使いたくないなら、HTMLの中に以下のコードを貼ると LiveReload は自動的に起動します。</p>
+<p>もしブラウザエクステンションを使いたくない場合は、HTMLの中に以下のコードを貼ると LiveReload が自動的に起動します。</p>
 
 <pre><code>&lt;script&gt;document.write('&lt;script src="http://'
 + (location.host || 'localhost').split(':')[0]
@@ -168,52 +169,52 @@ Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を
 
 <h3 id="history">History</h3>
 
-<p><img src="preference-history.png" alt="History" /></p>
+<p><img src="http://compass.handlino.com/doc/preference-history.png" alt="History" /></p>
 
 <p>&quot;Clear History&quot; ボタンをクリックすると、プロジェクトの履歴リストは削除されます。</p>
 
 <h2 id="options">Options</h2>
-<p>&quot;Watch&quot; しているのプロジェクトは、オプション変更できます。出力CSSの整形と &quot;line comments&quot; / &quot;debug info&quot; の付加もできます。</p>
+<p>&quot;Watch&quot; しているプロジェクトは、オプション変更できます。出力CSSの整形と &quot;line comments&quot; / &quot;debug info&quot; の付加もできます。</p>
 
 <h2 id="section-1">他の設定</h2>
-<p>ここからは変更したい可能性が高いが、 &quot;Preferences&quot; および &quot;Options&quot; にはない二箇所の設定を説明します：</p>
+<p>ここからは変更が必要になることが多い部分ですが、 &quot;Preferences&quot; および &quot;Options&quot; にはない二箇所の設定について説明します：</p>
 
 <h3 id="section-2">フォルダ名前の変更</h3>
-<p>CSS作成フォルダ名前の初期値は &quot;stylesheet&quot; です。もし変更したいなら、 <code>config.rb</code> のこの部分を編集してください：</p>
+<p>CSS作成フォルダ名前のデフォルトは &quot;stylesheet&quot; です。もし変更したい場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
 
 <pre><code>css_dir = "stylesheets"
 </code></pre>
 
-<p><code>config.rb</code> を保存した後は、 &quot;Stop Watching …&quot; をクリックして、更にもう一回このプロジェクトを &quot;Watch&quot; すると、CSS作成フォルダの名前は変わります。</p>
+<p><code>config.rb</code> を保存した後は、 &quot;Stop Watching …&quot; をクリックしてから、再度このプロジェクトを &quot;Watch&quot; し直すと、CSS作成フォルダの名前が変更できます。</p>
 
-<p><a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関するの Compass helper が使いますけれど、画像フォルダの名前は &quot;images&quot; ではない場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
+<p><a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関連する Compass helper を使う場合で、かつ画像フォルダの名前が &quot;images&quot; ではない場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
 
 <pre><code>images_dir = "images"
 </code></pre>
 
 <h3 id="section-3">絶対パスを相対パスに変更</h3>
-<p>初期設定によると、 <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関するの Compass helper を使うなら、作成されたCSSの中には絶対パスの状態になります。相対パスに変更したいなら、 <code>config.rb</code> の中に</p>
+<p>デフォルトでは、 <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関連する Compass helper を使う場合は、作成されるCSSは絶対パスになります。相対パスに変更したい場合は、 <code>config.rb</code> の中に</p>
 
 <pre><code>relative_assets = true
 </code></pre>
 
-<p>を入力してください。</p>
+<p>と入力してください。</p>
 
-<p><strong>注意！ <code>config.rb</code> 更新後は必ず &quot;Stop Watching …&quot; 、さらにもう一回このプロジェクトを &quot;Watch&quot; して、新しい設定を使用します</strong></p>
+<p><strong>注意！ <code>config.rb</code> 更新後は必ず &quot;Stop Watching …&quot; をクリックしてから、再度このプロジェクトを &quot;Watch&quot; し直すと、新しい設定が利用できます。</strong></p>
 
-<p>今の設定は他のプロジェクトにも使いたい場合は、 <code>config.rb</code> をそのプロジェクトフォルダにコピーしたら使用できます。</p>
+<p>今の設定を他のプロジェクトにも使いたい場合は、 <code>config.rb</code> を該当するプロジェクトフォルダにコピーしたら使用できます。</p>
 
-<h2 id="compassapp-">既存プロジェクトに Compass.app を使用します</h2>
-<p>既存プロジェクトに Compass.app を使用したい時、プロジェクトフォルダの中には以下の通り必要です：</p>
+<h2 id="compassapp-">既存プロジェクトに Compass.app を使用する場合</h2>
+<p>既存プロジェクトに Compass.app を使用する場合、プロジェクトフォルダの中には以下のものが必要です：</p>
 
 <ul>
-  <li><strong>sass フォルダ</strong>： <code>.scss</code> や <code>.sass</code> ファイル、どれか一つが必要です。</li>
-  <li><strong>config.rb</strong>： 他のプロジェクトからコピーしてください。必ず中の設定を検査します。</li>
+  <li><strong>sass フォルダ</strong>： <code>.scss</code> や <code>.sass</code> ファイル、どれか一つが必要です。 </li>
+  <li><strong>config.rb</strong>： 他のプロジェクトからコピーしてください。必ず中の設定を確認してください。</li>
 </ul>
 
-<p><strong>注: もし初期設定を一切変更しない、ただ Compass.app で Sass をコンパイルする場合、 <code>config.rb</code> が必要ない <a href="https://github.com/handlino/CompassApp/wiki/Sass-mode">Sass Mode</a> も使えられます。</strong></p>
+<p><strong>注: もし初期設定を一切変更せず、ただ Compass.app で Sass をコンパイルしたいだけの場合は、 <code>config.rb</code> が必要ない <a href="https://github.com/handlino/CompassApp/wiki/Sass-mode">Sass Mode</a> も使うことができます。</strong></p>
 
-<p>既存プロジェクトのCSSについては、時間があれば SCSS にリライトの方がいいです。もし時間がないなら、 SCSS は CSS3 のシンタックスのスーパーセットですので、簡単に既存 CSS のファイル名拡張子 <code>.css</code> を <code>.scss</code> に変更しますや SCSS <code>@import</code> を使用すればオッケーです。</p>
+<p>既存プロジェクトのCSSについては、時間があれば SCSS にリライトした方がより良いですが、もし時間がない場合は、 SCSS は CSS3 のシンタックスのスーパーセットなので、簡単に既存 CSS のファイル拡張子 <code>.css</code> を <code>.scss</code> に変更するだけでそのまま使えます。もしくは SCSS <code>@import</code> を使用すればオッケーです。</p>
 
 <h2 id="sass--compass-">SASS &amp; Compass 参考リンク</h2>
 
@@ -224,7 +225,6 @@ Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を
 
 <hr />
 <p><strong>このページに対する<a href="https://twitter.com/ken_c_lo">@ken_c_loさん</a>の修正と意見に感謝します！</strong></p>
-
 
 
             </div>
