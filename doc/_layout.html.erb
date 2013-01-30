@@ -1,0 +1,7 @@
+<% content_for :page_content do %>
+    <% if request.path != '/doc/' %>
+    <p><a href="/doc/">&larr; documentation</a></p>
+    <% end %>
+    <%= yield %>
+<% end %>
+<%= render :template => '/_layout' %>
