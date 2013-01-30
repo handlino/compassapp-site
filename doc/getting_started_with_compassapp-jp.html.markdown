@@ -144,3 +144,9 @@ CSS作成フォルダ名前の初期値は "stylesheet" です。もし変更し
 
 * [Sassの公式Webサイト](http://sass-lang.com/)
 * [Compassの公式Webサイト](http://compass-style.org/)
+
+
+====
+
+このページに対する[@ken_c_loさん](https://twitter.com/ken_c_lo)の修正と意見に感謝します！
+
