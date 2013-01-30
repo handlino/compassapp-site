@@ -1,163 +1,99 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #737373;
-    margin: 10px 13px 10px 13px;
-}
-a {
-    color: #0069d6;
-}
-a:hover {
-    color: #0050a3;
-    text-decoration: none;
-}
-a img {
-    border: none;
-}
-p {
-    margin-bottom: 9px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #404040;
-    line-height: 36px;
-}
-h1 {
-    margin-bottom: 18px;
-    font-size: 30px;
-}
-h2 {
-    font-size: 24px;
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 13px;
-}
-hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-}
-blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
-    font-family:georgia,serif;
-    font-style: italic;
-}
-blockquote:before {
-    content:"\201C";
-    font-size:40px;
-    margin-left:-10px;
-    font-family:georgia,serif;
-    color:#eee;
-}
-blockquote p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 11px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 11px;
-    padding: 0;
-}
-@media screen and (min-width: 768px) {
-    body {
-        width: 748px;
-        margin:10px auto;
-    }
-}
-</style>
-<title>Getting Started With Compass.app</title>
+<!DOCTYPE html>
 
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Handlino Inc." />
+    <meta property="og:title" content="Compass.app" />
+    <meta property="og:url" content="http://compass.handlino.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="compile Sass/Compass easily without resorting to command line interface" />
+    <meta property="og:image" content="http://compass.handlino.com/images/link-thumbnail.png" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Compass.app: compile Sass/Compass easily without resorting to command line interface</title>
+    <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Bree+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <!-- html5shiv http://code.google.com/p/html5shiv/ -->
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
 </head>
 <body>
-<h1>Getting Started With Compass.app</h1>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <h5 class="slogan">Use Sass / Compass in <strong>OS X, Windows, Linux</strong><img src="/images/icon-os.png"> easily</h5>
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="/doc/" class="documentation">Documentation</a></li>
+                        <li><a href="https://github.com/handlino/CompassApp/wiki/faq" class="faq">FAQ</a></li>
+                        <li><a href="https://github.com/handlino/CompassApp/issues" class="issues">Issues</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container inner">
+            <h1>Compass.app</h1>
+            <div class="buy">
+                <a href="http://transactions.digitaldeliveryapp.com/packages/392/purchase" class="button"><span>$10</span> Buy Now</a>
+                <p class="donated">30% of sales donated to <a target="_blank" href="http://www.umdf.org/">UMDF</a></p>
+            </div>
+            <ul class="quick-links">
+                <li>
+                    <iframe src="http://ghbtns.com/github-btn.html?user=handlino&repo=compassapp&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+                </li>
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compass.handlino.com/" data-via="handlino" data-related="handlino" data-hashtags="compassapp">Tweet</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/handlino" class="twitter-follow-button" data-width="225px" data-link-color="#0069D6" data-show-count="true">Follow @handlino</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="container-inner">
+                    
+    <p><a href="/doc/">&larr; documentation</a></p>
+    
+    <h1 id="getting-started-with-compassapp">Getting Started With Compass.app</h1>
 
 <p>First, download the Compass.app which corresponds to your OS, then unzip the file. Next, proceed to the section below for your OS.</p>
 
-<h3>Windows</h3>
-
-<p>You will get a folder containing all the Compass.app files. You can put this folder anywhere you want. Run Compass-app.exe and you'll see a little gray icon appear in the Windows notification area.</p>
+<h3 id="windows">Windows</h3>
+<p>You will get a folder containing all the Compass.app files. You can put this folder anywhere you want. Run Compass-app.exe and you&#39;ll see a little gray icon appear in the Windows notification area.</p>
 
 <p><img src="windows.jpg" alt="Windows" /></p>
 
-<h3>Mac OS</h3>
-
-<p>You will get a file named Compass.app. You can put it anywhere you want. Start the app and you'll see a little gray icon appear in the menubar.</p>
+<h3 id="mac-os">Mac OS</h3>
+<p>You will get a file named Compass.app. You can put it anywhere you want. Start the app and you&#39;ll see a little gray icon appear in the menubar.</p>
 
 <p><img src="osx.jpg" alt="Mac OS" /></p>
 
-<h3>Linux</h3>
-
-<p>You will get a folder containing all the Compass.app files. You can put this folder anywhere you want. Execute run.sh and you'll see a little gray icon appear in the menubar.</p>
+<h3 id="linux">Linux</h3>
+<p>You will get a folder containing all the Compass.app files. You can put this folder anywhere you want. Execute run.sh and you&#39;ll see a little gray icon appear in the menubar.</p>
 
 <p><img src="linux.jpg" alt="Linux" /></p>
 
-<p><strong> NOTE: Compass.app is written in Java, so it will take a few seconds to start.</strong></p>
+<p><strong>NOTE: Compass.app is written in Java, so it will take a few seconds to start.</strong></p>
 
-<h2>Creating Compass Projects</h2>
+<h2 id="creating-compass-projects">Creating Compass Projects</h2>
 
-<p>To create a compass project, click the Compass.app icon and choose "Create Compass Project" -> "compass" -> "project". Give your new project a name and save it.</p>
+<p>To create a compass project, click the Compass.app icon and choose &quot;Create Compass Project&quot; -&gt; &quot;compass&quot; -&gt; &quot;project&quot;. Give your new project a name and save it.</p>
 
 <p><img src="create-project.png" alt="dialog window" /></p>
 
-<p>A dialog window will appear saying your project has been created. Also, the icon turns orange, which means Compass.app is "watching" your project. Now you can use your favorite editor to start coding. When you change a Sass file, it automatically compiles into a corresponding CSS file.</p>
+<p>A dialog window will appear saying your project has been created. Also, the icon turns orange, which means Compass.app is &quot;watching&quot; your project. Now you can use your favorite editor to start coding. When you change a Sass file, it automatically compiles into a corresponding CSS file.</p>
 
 <p>The project folder should look like this:</p>
 
@@ -173,50 +109,50 @@ pre code {
   - config.rb      // Compass settings. Do not remove.
 </code></pre>
 
-<h2>Preferences</h2>
-
+<h2 id="preferences">Preferences</h2>
 <p>There are several settings in the preferences as follows.</p>
 
-<h3>Compass</h3>
+<h3 id="compass">Compass</h3>
 
 <p><img src="preference-compass.png" alt="Compass" /></p>
 
 <ul>
-<li><p>Preferred Syntax: <br/>
-Sass has two syntax choices: SCSS (.scss) and indented syntax (.sass). Compass.app supports both, but you must choose which one you want for generating files from templates.</p></li>
-<li><p>Compass Version: <br/>
-Compass.app always uses <a href="http://compass-style.org/CHANGELOG/">the latest stable release of Compass</a> by default. If you want to use other Sass/Compass versions, or use RubyGems to manage Compass extensions manually, please use the "Custom" option. <strong>WARNING: This is for advanced users only.</strong></p></li>
+  <li>
+    <p>Preferred Syntax:
+Sass has two syntax choices: SCSS (.scss) and indented syntax (.sass). Compass.app supports both, but you must choose which one you want for generating files from templates.</p>
+  </li>
+  <li>
+    <p>Compass Version:
+Compass.app always uses <a href="http://compass-style.org/CHANGELOG/">the latest stable release of Compass</a> by default. If you want to use other Sass/Compass versions, or use RubyGems to manage Compass extensions manually, please use the &quot;Custom&quot; option. <strong>WARNING: This is for advanced users only.</strong></p>
+  </li>
 </ul>
 
-
-<h3>Notification</h3>
+<h3 id="notification">Notification</h3>
 
 <p><img src="preference-notification.png" alt="Notification" /></p>
 
 <p>Compass.app supports <a href="http://growl.info/">Growl</a>. You can decide which types of notifications you want. Compass.app can also generate a log file for debugging purposes.</p>
 
-<h3>Services</h3>
+<h3 id="services">Services</h3>
 
 <p><img src="preference-services.png" alt="Services" /></p>
 
-<p><strong>Enable Web Server:</strong> <br/>
+<p><strong>Enable Web Server:</strong>
 If you have enabled this option, Compass.app will start a tiny web server (WEBrick) from your project path. You can instantly check your design by opening <code>http://localhost:24680</code> in your browser. You can also modify the default port.</p>
 
-<p><strong>Enable LiveReload:</strong> <br/>
+<p><strong>Enable LiveReload:</strong>
 Compass.app 1.2+ has built-in LiveReload support, so you can stop refreshing your browser manually. Browser extensions must be installed to make this work. If you have enabled both web server and livereload, you can even use the <a href="https://github.com/livereload/livereload-js">livereload-js</a> feature. (Our thanks to @livereload for the MIT License.) We also recommend <a href="http://livereload.com/">LiveReload 2</a>.</p>
 
 <ul>
-<li><a href="http://help.livereload.com/kb/general-use/browser-extensions">Browser extensions from LiveReload</a></li>
-<li>Older versions:
-
-<ul>
-<li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>. Double-click and confirm installation.</li>
-<li><a href="https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
-<li><a href="https://addons.mozilla.org/zh-TW/firefox/addon/livereload/">Firefox</a></li>
+  <li><a href="http://help.livereload.com/kb/general-use/browser-extensions">Browser extensions from LiveReload</a></li>
+  <li>Older versions:
+    <ul>
+      <li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>. Double-click and confirm installation.</li>
+      <li><a href="https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
+      <li><a href="https://addons.mozilla.org/zh-TW/firefox/addon/livereload/">Firefox</a></li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
-
 
 <p>If you do not want to install browser extensions, you can use livereload-js by pasting this code into your HTML:</p>
 
@@ -228,23 +164,20 @@ Compass.app 1.2+ has built-in LiveReload support, so you can stop refreshing you
 
 <p>Then LiveReload will work automatically.</p>
 
-<h3>History</h3>
+<h3 id="history">History</h3>
 
 <p><img src="preference-history.png" alt="History" /></p>
 
-<p>Click the "Clear History" button to destroy the history list.</p>
+<p>Click the &quot;Clear History&quot; button to destroy the history list.</p>
 
-<h2>Options</h2>
+<h2 id="options">Options</h2>
+<p>You can change the options of your output CSS for any project being &quot;watched&quot;. Select your preferred output type or add &quot;line comments&quot;/&quot;debug info&quot; inside the CSS file.</p>
 
-<p>You can change the options of your output CSS for any project being "watched". Select your preferred output type or add "line comments"/"debug info" inside the CSS file.</p>
+<h2 id="other-settings">Other Settings</h2>
+<p>There are some more settings you might want to change but are not found in &quot;Preferences&quot; or &quot;Options&quot;. Two common situations are shown below:</p>
 
-<h2>Other Settings</h2>
-
-<p>There are some more settings you might want to change but are not found in "Preferences" or "Options". Two common situations are shown below:</p>
-
-<h3>Changing The Default Folder Name</h3>
-
-<p>The defalut ouput CSS file is saved to a folder named "stylesheet." If you want to change the folder's name, open the <code>config.rb</code> file and edit this line:</p>
+<h3 id="changing-the-default-folder-name">Changing The Default Folder Name</h3>
+<p>The defalut ouput CSS file is saved to a folder named &quot;stylesheet.&quot; If you want to change the folder&#39;s name, open the <code>config.rb</code> file and edit this line:</p>
 
 <pre><code>css_dir = "stylesheets"
 </code></pre>
@@ -254,50 +187,94 @@ Compass.app 1.2+ has built-in LiveReload support, so you can stop refreshing you
 <pre><code>css_dir = "css"
 </code></pre>
 
-<p>After save, stop watching and watch the project again then the css folder's name will be changed.</p>
+<p>After save, stop watching and watch the project again then the css folder&#39;s name will be changed.</p>
 
-<p>If you want to use some Compass helper related to <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> but your image folder isn't named "images", you have to modify this line:</p>
+<p>If you want to use some Compass helper related to <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> but your image folder isn&#39;t named &quot;images&quot;, you have to modify this line:</p>
 
 <pre><code>images_dir = "images"
 </code></pre>
 
 <p>to correspond to your image folder name.</p>
 
-<h3>Changing Absolute Path To Relative Path</h3>
-
+<h3 id="changing-absolute-path-to-relative-path">Changing Absolute Path To Relative Path</h3>
 <p>By default, if you use a Compass helper related to <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a>, Compass.app generates an absolute path in your CSS file. To change the default setting to a relative path, paste this into your <code>config.rb</code>:</p>
 
 <pre><code>relative_assets = true
 </code></pre>
 
-<p><strong> Be sure to stop watching and watch the project again after modifying "config.rb". </strong></p>
+<p><strong>Be sure to stop watching and watch the project again after modifying &quot;config.rb&quot;.</strong></p>
 
-<p>If you want to use your current settings with another project, copy <code>config.rb</code> to the other project's folder.</p>
+<p>If you want to use your current settings with another project, copy <code>config.rb</code> to the other project&#39;s folder.</p>
 
-<h2>Using Compass.app With Existing Projects</h2>
-
+<h2 id="using-compassapp-with-existing-projects">Using Compass.app With Existing Projects</h2>
 <p>If you want to use Compass.app to edit css in an existing project that was not created with Compass.app, just make sure the project folder contains:</p>
 
 <ul>
-<li><strong>sass folder</strong>: must have at least one <code>.scss</code> or <code>.sass</code> file</li>
-<li><strong>config.rb</strong>: copy from another compass project, be sure to check the settings are what you want</li>
+  <li><strong>sass folder</strong>: must have at least one <code>.scss</code> or <code>.sass</code> file</li>
+  <li><strong>config.rb</strong>: copy from another compass project, be sure to check the settings are what you want</li>
 </ul>
-
 
 <p>then you can watch the project folder.</p>
 
-<p><strong> NOTE: If you just want to use default settings to compile Sass files, you can use Compass.app in <a href="https://github.com/handlino/CompassApp/wiki/Sass-mode">Sass Mode</a> without copying config.rb. </strong></p>
+<p><strong>NOTE: If you just want to use default settings to compile Sass files, you can use Compass.app in <a href="https://github.com/handlino/CompassApp/wiki/Sass-mode">Sass Mode</a> without copying config.rb.</strong></p>
 
-<p>It is best to rewrite your original CSS files, however, because SCSS is a superset of CSS3's syntax, you may simply rename your original css files with the filename extension <code>.scss</code> or use <code>@import</code> in your SCSS files.</p>
+<p>It is best to rewrite your original CSS files, however, because SCSS is a superset of CSS3&#39;s syntax, you may simply rename your original css files with the filename extension <code>.scss</code> or use <code>@import</code> in your SCSS files.</p>
 
-<h2>SASS &amp; Compass References</h2>
+<h2 id="sass--compass-references">SASS &amp; Compass References</h2>
 
 <p>With Compass.app you can easily use Sass and Compass. If you need to know more details about them, check the links below:</p>
 
 <ul>
-<li><a href="http://sass-lang.com/">SASS</a></li>
-<li><a href="http://compass-style.org/">Compass</a></li>
+  <li><a href="http://sass-lang.com/">SASS</a></li>
+  <li><a href="http://compass-style.org/">Compass</a></li>
 </ul>
 
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <div class="span9">
+                        <p>Compass.app is brought to you by <a href="http://handlino.com/">Handlino Inc.</a> The delivery system is powered by the awesome <a href="http://www.digitaldeliveryapp.com?affiliate=handlino">DigitalDeliveryApp</a> service.</p>
+                    </div>
+                    <div class="span3"><a class="btn" href="http://compass.handlino.com/assets/mediakit.zip"><i class="icon-download-alt"> </i>Download Media Kit</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a[rel=group]").fancybox({
+                'transitionIn'      : 'none',
+                'transitionOut'     : 'none',
+                'titlePosition'     : 'over',
+                'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+        });
+    </script>
+    <script src="/javascripts/jquery.fitvids.js"></script>
+    <script>
+      $(".container").fitVids();
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2945555-15']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+</script>
 </body>
 </html>

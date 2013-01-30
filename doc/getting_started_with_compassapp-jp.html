@@ -1,165 +1,101 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<style>
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote {
-    margin: 0;
-    padding: 0;
-}
-body {
-    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
-    font-size: 13px;
-    line-height: 18px;
-    color: #737373;
-    margin: 10px 13px 10px 13px;
-}
-a {
-    color: #0069d6;
-}
-a:hover {
-    color: #0050a3;
-    text-decoration: none;
-}
-a img {
-    border: none;
-}
-p {
-    margin-bottom: 9px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #404040;
-    line-height: 36px;
-}
-h1 {
-    margin-bottom: 18px;
-    font-size: 30px;
-}
-h2 {
-    font-size: 24px;
-}
-h3 {
-    font-size: 18px;
-}
-h4 {
-    font-size: 16px;
-}
-h5 {
-    font-size: 14px;
-}
-h6 {
-    font-size: 13px;
-}
-hr {
-    margin: 0 0 19px;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-}
-blockquote {
-    padding: 13px 13px 21px 15px;
-    margin-bottom: 18px;
-    font-family:georgia,serif;
-    font-style: italic;
-}
-blockquote:before {
-    content:"\201C";
-    font-size:40px;
-    margin-left:-10px;
-    font-family:georgia,serif;
-    color:#eee;
-}
-blockquote p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 18px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-code, pre {
-    font-family: Monaco, Andale Mono, Courier New, monospace;
-}
-code {
-    background-color: #fee9cc;
-    color: rgba(0, 0, 0, 0.75);
-    padding: 1px 3px;
-    font-size: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-}
-pre {
-    display: block;
-    padding: 14px;
-    margin: 0 0 18px;
-    line-height: 16px;
-    font-size: 11px;
-    border: 1px solid #d9d9d9;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-}
-pre code {
-    background-color: #fff;
-    color:#737373;
-    font-size: 11px;
-    padding: 0;
-}
-@media screen and (min-width: 768px) {
-    body {
-        width: 748px;
-        margin:10px auto;
-    }
-}
-</style>
-<title>Compass.app</title>
+<!DOCTYPE html>
 
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Handlino Inc." />
+    <meta property="og:title" content="Compass.app" />
+    <meta property="og:url" content="http://compass.handlino.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="compile Sass/Compass easily without resorting to command line interface" />
+    <meta property="og:image" content="http://compass.handlino.com/images/link-thumbnail.png" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Compass.app: compile Sass/Compass easily without resorting to command line interface</title>
+    <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Bree+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <!-- html5shiv http://code.google.com/p/html5shiv/ -->
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
 </head>
 <body>
-<h1>Compass.app</h1>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <h5 class="slogan">Use Sass / Compass in <strong>OS X, Windows, Linux</strong><img src="/images/icon-os.png"> easily</h5>
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="/doc/" class="documentation">Documentation</a></li>
+                        <li><a href="https://github.com/handlino/CompassApp/wiki/faq" class="faq">FAQ</a></li>
+                        <li><a href="https://github.com/handlino/CompassApp/issues" class="issues">Issues</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container inner">
+            <h1>Compass.app</h1>
+            <div class="buy">
+                <a href="http://transactions.digitaldeliveryapp.com/packages/392/purchase" class="button"><span>$10</span> Buy Now</a>
+                <p class="donated">30% of sales donated to <a target="_blank" href="http://www.umdf.org/">UMDF</a></p>
+            </div>
+            <ul class="quick-links">
+                <li>
+                    <iframe src="http://ghbtns.com/github-btn.html?user=handlino&repo=compassapp&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+                </li>
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compass.handlino.com/" data-via="handlino" data-related="handlino" data-hashtags="compassapp">Tweet</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/handlino" class="twitter-follow-button" data-width="225px" data-link-color="#0069D6" data-show-count="true">Follow @handlino</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="container-inner">
+                    
+    <p><a href="/doc/">&larr; documentation</a></p>
+    
+    <h1 id="compassapp">Compass.app</h1>
 
 <p>Compass.app は Sass と Compass が使いたいですが、コマンドラインで設定するのは大変と思っている方のために作ったGUIツールです。 Windows / Mac OS / Linux 全てに対応しています。 インストールも必要ない、シンプルなツールです。</p>
 
 <p><a href="http://compass.handlino.com/">Compass.app のオフィシャルサイト</a>で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 OS に対応したのをダウンロードして、そして ZIP フアィルを解凍してください。</p>
 
-<h3>Windows</h3>
-
+<h3 id="windows">Windows</h3>
 <p>解凍したのは、 Compass.app が必要なフアィルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 Compass-app.exe をクリックして起動しますと、タスクトレイにグレーアイコンが表示されます。</p>
 
 <p><img src="windows.jpg" alt="Windows" /></p>
 
-<h3>Mac OS</h3>
-
+<h3 id="mac-os">Mac OS</h3>
 <p>解凍したのは、 Compass.app です、好きな所に配置してください。 Dropbox に置いても大丈夫です。 Compass.app をクリックして起動しますと、メニューバーにグレーアイコンが表示されます。</p>
 
 <p><img src="osx.jpg" alt="Mac OS" /></p>
 
-<h3>Linux</h3>
-
+<h3 id="linux">Linux</h3>
 <p>解凍したのは、 Compass.app が必要なフアィルを含むフォルダです。このフォルダを好きな所に配置して、 Dropbox に置いても大丈夫です。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。</p>
 
 <p><img src="linux.jpg" alt="Linux" /></p>
 
-<p><strong> *注: Compass.app は JAVA で開発したので、起動は数秒かかります。お待ちになってください。 </strong></p>
+<p><strong>*注: Compass.app は JAVA で開発したので、起動は数秒かかります。お待ちになってください。</strong></p>
 
-<h2>プロジェクトを作成</h2>
+<h2 id="section">プロジェクトを作成</h2>
 
-<p>シンプルな compass プロジェクトを例にします。 Compass.app を起動し、アイコンをクリックして、"Create Compass Project" -> "compass" -> "project" を順番に選んで、そしてプロジェクトの名前を入力してセーフします。</p>
+<p>シンプルな compass プロジェクトを例にします。 Compass.app を起動し、アイコンをクリックして、&quot;Create Compass Project&quot; -&gt; &quot;compass&quot; -&gt; &quot;project&quot; を順番に選んで、そしてプロジェクトの名前を入力してセーフします。</p>
 
 <p><img src="create-project.png" alt="dialog window" /></p>
 
-<p>セーフした後、作成成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを "Watch" しているの意味です。</p>
+<p>セーフした後、作成成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを &quot;Watch&quot; しているの意味です。</p>
 
 <p>プロジェクトフォルダの構成は以下のようになっています：</p>
 
@@ -177,50 +113,50 @@ pre code {
 
 <p>そしてお気に入りの IDE でプロジェクトを編集ができます。 SCSS と Sass フアィルが保存の際自動的に CSS にコンパイルされます。</p>
 
-<h2>Preferences 解説</h2>
+<h2 id="preferences-">Preferences 解説</h2>
+<p>Compass.app アイコンをクリックして &quot;Preferences&quot; を選びますと、いろんな設定ができます。</p>
 
-<p>Compass.app アイコンをクリックして "Preferences" を選びますと、いろんな設定ができます。</p>
-
-<h3>Compass</h3>
+<h3 id="compass">Compass</h3>
 
 <p><img src="preference-compass.png" alt="Compass" /></p>
 
 <ul>
-<li><p>Preferred Syntax: <br/>
-Sass には SCSS (.scss) と Sass (indented syntax, .sass) という2種類のシンタックスがあります。 Compass.app で両方も使えます。ここで選ぶのはプロジェクト作成する時、テンプレートのシンタックスです。</p></li>
-<li><p>Compass Version: <br/>
-Compass.app の初期値は <a href="http://compass-style.org/CHANGELOG/"> Compass の最新安定版バージョン</a> を使用しています。もし他の Sass / Compass ヴァージョンが使いたいおよび RubyGems でパッケージ管理したい場合はら、 "Custom" を選んでください。<strong>注意！上級ユーザーのみにお勧めしています！</strong></p></li>
+  <li>
+    <p>Preferred Syntax:
+Sass には SCSS (.scss) と Sass (indented syntax, .sass) という2種類のシンタックスがあります。 Compass.app で両方も使えます。ここで選ぶのはプロジェクト作成する時、テンプレートのシンタックスです。</p>
+  </li>
+  <li>
+    <p>Compass Version:
+Compass.app の初期値は <a href="http://compass-style.org/CHANGELOG/"> Compass の最新安定版バージョン</a> を使用しています。もし他の Sass / Compass ヴァージョンが使いたいおよび RubyGems でパッケージ管理したい場合はら、 &quot;Custom&quot; を選んでください。<strong>注意！上級ユーザーのみにお勧めしています！</strong></p>
+  </li>
 </ul>
 
-
-<h3>Notification</h3>
+<h3 id="notification">Notification</h3>
 
 <p><img src="preference-notification.png" alt="Notification" /></p>
 
 <p>Compass.app は <a href="http://growl.info/">Growl</a> に対応していますので、欲しいメッセージタイプを選べます。デバッグのためのログ出力もできます。</p>
 
-<h3>Services</h3>
+<h3 id="services">Services</h3>
 
 <p><img src="preference-services.png" alt="Services" /></p>
 
-<p><strong>Enable Web Server:</strong> <br/>
+<p><strong>Enable Web Server:</strong>
 ここにチェックしますと、 Compass.app はプロジェクトパスで軽量 Web サーバ (WEBrick) を起動します。ブラウザに <code>http://localhost:24680</code> を入力しますと、実際のプロジェクトページが見えます。ポートの初期値は変更可能です。</p>
 
-<p><strong>Enable LiveReload:</strong> <br/>
-Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を使用するとファイルを保存した時に自動でブラウザをオートリロードします。ご利用にはブラウザエクステンションのインストールが必要です。 Web サーバと LiveReload 両方もチェックしますと、 "<a href="https://github.com/livereload/livereload-js">LiveReload.js</a>"　が使えられます。(@livereload によりMITライセンスで公開されて、感謝しています。) <a href="http://livereload.com/">LiveReload 2</a>もお勧めです。</p>
+<p><strong>Enable LiveReload:</strong>
+Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を使用するとファイルを保存した時に自動でブラウザをオートリロードします。ご利用にはブラウザエクステンションのインストールが必要です。 Web サーバと LiveReload 両方もチェックしますと、 &quot;<a href="https://github.com/livereload/livereload-js">LiveReload.js</a>&quot;　が使えられます。(@livereload によりMITライセンスで公開されて、感謝しています。) <a href="http://livereload.com/">LiveReload 2</a>もお勧めです。</p>
 
 <ul>
-<li><a href="http://help.livereload.com/kb/general-use/browser-extensions">LiveReloadブラウザエクステンション</a></li>
-<li>古いヴァージョン：
-
-<ul>
-<li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>.</li>
-<li><a href="https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
-<li><a href="https://addons.mozilla.org/zh-TW/firefox/addon/livereload/">Firefox</a></li>
+  <li><a href="http://help.livereload.com/kb/general-use/browser-extensions">LiveReloadブラウザエクステンション</a></li>
+  <li>古いヴァージョン：
+    <ul>
+      <li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>.</li>
+      <li><a href="https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
+      <li><a href="https://addons.mozilla.org/zh-TW/firefox/addon/livereload/">Firefox</a></li>
+    </ul>
+  </li>
 </ul>
-</li>
-</ul>
-
 
 <p>もしブラウザエクステンションを使いたくないなら、HTMLの中に以下のコードを貼ると LiveReload は自動的に起動します。</p>
 
@@ -230,36 +166,32 @@ Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を
 + 'script&gt;')&lt;/script&gt;
 </code></pre>
 
-<h3>History</h3>
+<h3 id="history">History</h3>
 
 <p><img src="preference-history.png" alt="History" /></p>
 
-<p>"Clear History" ボタンをクリックすると、プロジェクトの履歴リストは削除されます。</p>
+<p>&quot;Clear History&quot; ボタンをクリックすると、プロジェクトの履歴リストは削除されます。</p>
 
-<h2>Options</h2>
+<h2 id="options">Options</h2>
+<p>&quot;Watch&quot; しているのプロジェクトは、オプション変更できます。出力CSSの整形と &quot;line comments&quot; / &quot;debug info&quot; の付加もできます。</p>
 
-<p>"Watch" しているのプロジェクトは、オプション変更できます。出力CSSの整形と "line comments" / "debug info" の付加もできます。</p>
+<h2 id="section-1">他の設定</h2>
+<p>ここからは変更したい可能性が高いが、 &quot;Preferences&quot; および &quot;Options&quot; にはない二箇所の設定を説明します：</p>
 
-<h2>他の設定</h2>
-
-<p>ここからは変更したい可能性が高いが、 "Preferences" および "Options" にはない二箇所の設定を説明します：</p>
-
-<h3>フォルダ名前の変更</h3>
-
-<p>CSS作成フォルダ名前の初期値は "stylesheet" です。もし変更したいなら、 <code>config.rb</code> のこの部分を編集してください：</p>
+<h3 id="section-2">フォルダ名前の変更</h3>
+<p>CSS作成フォルダ名前の初期値は &quot;stylesheet&quot; です。もし変更したいなら、 <code>config.rb</code> のこの部分を編集してください：</p>
 
 <pre><code>css_dir = "stylesheets"
 </code></pre>
 
-<p><code>config.rb</code> を保存した後は、 "Stop Watching …" をクリックして、更にもう一回このプロジェクトを "Watch" すると、CSS作成フォルダの名前は変わります。</p>
+<p><code>config.rb</code> を保存した後は、 &quot;Stop Watching …&quot; をクリックして、更にもう一回このプロジェクトを &quot;Watch&quot; すると、CSS作成フォルダの名前は変わります。</p>
 
-<p><a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関するの Compass helper が使いますけれど、画像フォルダの名前は "images" ではない場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
+<p><a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関するの Compass helper が使いますけれど、画像フォルダの名前は &quot;images&quot; ではない場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
 
 <pre><code>images_dir = "images"
 </code></pre>
 
-<h3>絶対パスを相対パスに変更</h3>
-
+<h3 id="section-3">絶対パスを相対パスに変更</h3>
 <p>初期設定によると、 <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関するの Compass helper を使うなら、作成されたCSSの中には絶対パスの状態になります。相対パスに変更したいなら、 <code>config.rb</code> の中に</p>
 
 <pre><code>relative_assets = true
@@ -267,30 +199,75 @@ Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を
 
 <p>を入力してください。</p>
 
-<p><strong> 注意！ <code>config.rb</code> 更新後は必ず "Stop Watching …" 、さらにもう一回このプロジェクトを "Watch" して、新しい設定を使用します </strong></p>
+<p><strong>注意！ <code>config.rb</code> 更新後は必ず &quot;Stop Watching …&quot; 、さらにもう一回このプロジェクトを &quot;Watch&quot; して、新しい設定を使用します</strong></p>
 
 <p>今の設定は他のプロジェクトにも使いたい場合は、 <code>config.rb</code> をそのプロジェクトフォルダにコピーしたら使用できます。</p>
 
-<h2>既存プロジェクトに Compass.app を使用します</h2>
-
+<h2 id="compassapp-">既存プロジェクトに Compass.app を使用します</h2>
 <p>既存プロジェクトに Compass.app を使用したい時、プロジェクトフォルダの中には以下の通り必要です：</p>
 
 <ul>
-<li><strong>sass フォルダ</strong>： <code>.scss</code> や <code>.sass</code> ファイル、どれか一つが必要です。</li>
-<li><strong>config.rb</strong>： 他のプロジェクトからコピーしてください。必ず中の設定を検査します。</li>
+  <li><strong>sass フォルダ</strong>： <code>.scss</code> や <code>.sass</code> ファイル、どれか一つが必要です。</li>
+  <li><strong>config.rb</strong>： 他のプロジェクトからコピーしてください。必ず中の設定を検査します。</li>
 </ul>
 
-
-<p><strong> 注: もし初期設定を一切変更しない、ただ Compass.app で Sass をコンパイルする場合、 <code>config.rb</code> が必要ない <a href="https://github.com/handlino/CompassApp/wiki/Sass-mode">Sass Mode</a> も使えられます。 </strong></p>
+<p><strong>注: もし初期設定を一切変更しない、ただ Compass.app で Sass をコンパイルする場合、 <code>config.rb</code> が必要ない <a href="https://github.com/handlino/CompassApp/wiki/Sass-mode">Sass Mode</a> も使えられます。</strong></p>
 
 <p>既存プロジェクトのCSSについては、時間があれば SCSS にリライトの方がいいです。もし時間がないなら、 SCSS は CSS3 のシンタックスのスーパーセットですので、簡単に既存 CSS のファイル名拡張子 <code>.css</code> を <code>.scss</code> に変更しますや SCSS <code>@import</code> を使用すればオッケーです。</p>
 
-<h2>SASS &amp; Compass 参考リンク</h2>
+<h2 id="sass--compass-">SASS &amp; Compass 参考リンク</h2>
 
 <ul>
-<li><a href="http://sass-lang.com/">Sassの公式Webサイト</a></li>
-<li><a href="http://compass-style.org/">Compassの公式Webサイト</a></li>
+  <li><a href="http://sass-lang.com/">Sassの公式Webサイト</a></li>
+  <li><a href="http://compass-style.org/">Compassの公式Webサイト</a></li>
 </ul>
 
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <div class="span9">
+                        <p>Compass.app is brought to you by <a href="http://handlino.com/">Handlino Inc.</a> The delivery system is powered by the awesome <a href="http://www.digitaldeliveryapp.com?affiliate=handlino">DigitalDeliveryApp</a> service.</p>
+                    </div>
+                    <div class="span3"><a class="btn" href="http://compass.handlino.com/assets/mediakit.zip"><i class="icon-download-alt"> </i>Download Media Kit</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a[rel=group]").fancybox({
+                'transitionIn'      : 'none',
+                'transitionOut'     : 'none',
+                'titlePosition'     : 'over',
+                'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+        });
+    </script>
+    <script src="/javascripts/jquery.fitvids.js"></script>
+    <script>
+      $(".container").fitVids();
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-2945555-15']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+         })();
+</script>
 </body>
 </html>

@@ -5968,11 +5968,11 @@ button.close {
 /* `Base
 -----------------------------------------------------------------------------*/
 html {
-  background: #101010 url('/images/bg-header.jpg?1359476201') center top no-repeat;
+  background: #101010 url('/images/bg-header.jpg?1359477315') center top no-repeat;
 }
 
 body {
-  background: url('/images/bg.png?1359476201') left top repeat;
+  background: url('/images/bg.png?1359477315') left top repeat;
   margin: 0;
   font: 15px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
@@ -6049,7 +6049,7 @@ h2.title {
 /* `Header
 -----------------------------------------------------------------------------*/
 .navbar {
-  background: rgba(0, 0, 0, 0.2) url('/images/bg-navbar.png?1359476201') left top repeat-x;
+  background: rgba(0, 0, 0, 0.2) url('/images/bg-navbar.png?1359477315') left top repeat-x;
   font-family: "Bree Serif", serif;
   color: #bfbfbf;
 }
@@ -6109,7 +6109,7 @@ header .inner {
 header h1 {
   margin-bottom: 12px;
   margin: 0 auto;
-  background: url('/images/h1.png?1359476201') center top no-repeat;
+  background: url('/images/h1.png?1359477315') center top no-repeat;
   height: 89px;
   width: 446px;
   text-indent: -9999em;
@@ -6193,10 +6193,10 @@ header h1 {
 /* `Content
 -----------------------------------------------------------------------------*/
 .content {
-  background: whitesmoke url('/images/bg-content.png?1359476201') left top repeat;
+  background: whitesmoke url('/images/bg-content.png?1359477315') left top repeat;
 }
 .content .container {
-  background: url('/images/bg-grid-60.png?1359476201') left top repeat;
+  background: url('/images/bg-grid-60.png?1359477315') left top repeat;
   border-right: 1px solid #e6e6e6;
   padding: 78px 0 26px;
 }
@@ -6221,12 +6221,12 @@ header h1 {
   -ms-transition: all 0.15s ease-in-out;
   -o-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  background: rgba(255, 255, 255, 0.5) url('/images/fireapp.png?1359476201') center 10px no-repeat;
+  background: rgba(255, 255, 255, 0.5) url('/images/fireapp.png?1359477315') center 10px no-repeat;
   margin: 0 0 0 1px;
   padding: 78px 60px 25px;
 }
 .product .inner:hover {
-  background: rgba(255, 255, 255, 0.8) url('/images/fireapp.png?1359476201') center 10px no-repeat;
+  background: rgba(255, 255, 255, 0.8) url('/images/fireapp.png?1359477315') center 10px no-repeat;
 }
 .product .inner p {
   margin: 0;
@@ -6234,7 +6234,7 @@ header h1 {
 
 .features ul li {
   float: none;
-  background: url('/images/icon-plus.png?1359476201') 12px 9px no-repeat;
+  background: url('/images/icon-plus.png?1359477315') 12px 9px no-repeat;
   padding-left: 32px;
 }
 
@@ -6261,7 +6261,7 @@ header h1 {
 }
 .recommendation ul blockquote {
   display: inline-block;
-  background: url('/images/quote.png?1359476201') left top no-repeat;
+  background: url('/images/quote.png?1359477315') left top no-repeat;
   border: 0;
   margin: 0;
   padding: 0 0 0 32px;
@@ -6379,7 +6379,7 @@ footer a.btn:hover {
   }
 
   .content .container {
-    background: url('/images/bg-grid-42.png?1359476201') left top repeat;
+    background: url('/images/bg-grid-42.png?1359477315') left top repeat;
   }
 
   .product .inner {
