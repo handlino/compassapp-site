@@ -44,7 +44,7 @@
         <div class="container inner">
             <h1>Compass.app</h1>
             <div class="buy">
-                <a href="http://transactions.digitaldeliveryapp.com/packages/392/purchase" class="button"><span>$10</span> Buy Now</a>
+                <a href="http://transactions.digitaldeliveryapp.com/packages/392/purchase" onclick="_gaq.push(['_link', 'http://transactions.digitaldeliveryapp.com/products/392/purchase']); return false;" class="button"><span>$10</span> Buy Now</a>
                 <p class="donated">30% of sales donated to <a target="_blank" href="http://www.umdf.org/">UMDF</a></p>
             </div>
             <ul class="quick-links">
@@ -104,6 +104,8 @@
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-2945555-15']);
         _gaq.push(['_trackPageview']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_setAllowHash', false]);
         (function() {
          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
