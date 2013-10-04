@@ -136,7 +136,7 @@ If you want to use Compass.app to edit css in an existing project that was not c
 
 then you can watch the project folder.
 
-**NOTE: If you just want to use default settings to compile Sass files, you can use Compass.app in [Sass Mode](https://github.com/handlino/CompassApp/wiki/Sass-mode) without copying config.rb.**
+**NOTE: If you just want to use default settings to compile Sass files, you can use Compass.app in [Sass Mode](https://github.com/KKBOX/CompassApp/wiki/Sass-mode) without copying config.rb.**
 
 It is best to rewrite your original CSS files, however, because SCSS is a superset of CSS3's syntax, you may simply rename your original css files with the filename extension `.scss` or use `@import` in your SCSS files.
 

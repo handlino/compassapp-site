@@ -2,26 +2,26 @@
 
 Compass.app は Sass と Compass が使いたいけど、コマンドラインを操作するのに抵抗を感じているという方のために作ったGUIツールです。 Windows / Mac OS / Linux 全てに対応しています。 インストールも必要ない、シンプルなツールです。
 
-[Compass.app のオフィシャルサイト](http://compass.handlino.com/)で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 お持ちの OS に対応したものをダウンロードして、ZIP ファイルを解凍してください。
+[Compass.app のオフィシャルサイト](http://compass.kkbox.com/)で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 お持ちの OS に対応したものをダウンロードして、ZIP ファイルを解凍してください。
 
 
 ### Windows
 Compass.app に必要なファイルが入ったフォルダが解凍されたら、このフォルダを好きな所に配置して下さい（Dropbox に置いても大丈夫です）。 Compass-app.exe をクリックして起動すると、タスクトレイにグレーアイコンが表示されます。
 
  
-![Windows](http://compass.handlino.com/doc/windows.jpg)
+![Windows](http://compass.kkbox.com/doc/windows.jpg)
 
 ### Mac OS
 解凍されたCompass.appを、好きな所に配置してください（Dropbox に置いても大丈夫です）。 Compass.app をクリックして起動すると、メニューバーにグレーアイコンが表示されます。
 
   
-![Mac OS](http://compass.handlino.com/doc/osx.jpg)
+![Mac OS](http://compass.kkbox.com/doc/osx.jpg)
 
 ### Linux
 Compass.app に必要なファイルが入ったフォルダが解凍されたら、このフォルダを好きな所に配置して下さい（Dropbox に置いても大丈夫です）。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。
 
   
-![Linux](http://compass.handlino.com/doc/linux.jpg)
+![Linux](http://compass.kkbox.com/doc/linux.jpg)
 
 **注: Compass.app は JAVA で開発した為、起動には多少時間がかかります。数秒ほどお待ちください。**
 
@@ -30,13 +30,13 @@ Compass.app に必要なファイルが入ったフォルダが解凍された�
 
 シンプルな compass プロジェクトを例に説明します。 Compass.app を起動し、アイコンをクリックして、"Create Compass Project" -> "compass" -> "project" を順番に選び、プロジェクトの名前を入力して保存します。
 
-![dialog window](http://compass.handlino.com/doc/create-project.png)
+![dialog window](http://compass.kkbox.com/doc/create-project.png)
 
 保存した後、プロジェクト作成の成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを "Watch" しているという意味です。
 
 プロジェクトフォルダの構成は以下のようになっています：
 
-![project folder](http://compass.handlino.com/doc/project-folder.png)
+![project folder](http://compass.kkbox.com/doc/project-folder.png)
 
     awesome-website/
       - sass/
@@ -56,7 +56,7 @@ Compass.app アイコンをクリックして "Preferences" を選ぶと、い�
 
 ### Compass
 
-![Compass](http://compass.handlino.com/doc/preference-compass.png)
+![Compass](http://compass.kkbox.com/doc/preference-compass.png)
 
 * Preferred Syntax:   
 Sass には SCSS (.scss) と Sass (indented syntax, .sass) という2種類のシンタックスがあります。 Compass.app ではこの両方が使えます。プロジェクトを作成する時、ここでテンプレートのシンタックスを選択してください。
@@ -67,13 +67,13 @@ Compass.app のデフォルトは [ Compass の最新安定版バージョン](h
 
 ### Notification
 
-![Notification](http://compass.handlino.com/doc/preference-notification.png)
+![Notification](http://compass.kkbox.com/doc/preference-notification.png)
 
 Compass.app は [Growl](http://growl.info/) に対応しているので、好きなメッセージタイプを選べます。デバッグのためのログ出力もできます。 
 
 ### Services
 
-![Services](http://compass.handlino.com/doc/preference-services.png)
+![Services](http://compass.kkbox.com/doc/preference-services.png)
 
 **Enable Web Server:**   
 ここにチェックを入れると、 Compass.app からプロジェクトパスで軽量 Web サーバ (WEBrick) を起動できます。ブラウザに `http://localhost:24680` と入力すると、実際のプロジェクトページを見ることができます。ポート番号のデフォルト値は変更可能です。
@@ -97,7 +97,7 @@ Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を
 
 ### History
 
-![History](http://compass.handlino.com/doc/preference-history.png)
+![History](http://compass.kkbox.com/doc/preference-history.png)
 
 "Clear History" ボタンをクリックすると、プロジェクトの履歴リストは削除されます。
 
@@ -138,7 +138,7 @@ CSS作成フォルダ名前のデフォルトは "stylesheet" です。もし変
 * **sass フォルダ**： `.scss` や `.sass` ファイル、どれか一つが必要です。 
 * **config.rb**： 他のプロジェクトからコピーしてください。必ず中の設定を確認してください。
 
-**注: もし初期設定を一切変更せず、ただ Compass.app で Sass をコンパイルしたいだけの場合は、 `config.rb` が必要ない [Sass Mode](https://github.com/handlino/CompassApp/wiki/Sass-mode) も使うことができます。**
+**注: もし初期設定を一切変更せず、ただ Compass.app で Sass をコンパイルしたいだけの場合は、 `config.rb` が必要ない [Sass Mode](https://github.com/KKBOX/CompassApp/wiki/Sass-mode) も使うことができます。**
 
 既存プロジェクトのCSSについては、時間があれば SCSS にリライトした方がより良いですが、もし時間がない場合は、 SCSS は CSS3 のシンタックスのスーパーセットなので、簡単に既存 CSS のファイル拡張子 `.css` を `.scss` に変更するだけでそのまま使えます。もしくは SCSS `@import` を使用すればオッケーです。
 

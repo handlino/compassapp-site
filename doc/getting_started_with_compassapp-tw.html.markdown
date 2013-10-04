@@ -5,17 +5,17 @@
 ### Windows
 解壓縮檔案後會得到一個包含 Compass.app 所需檔案之資料夾，可將此資料夾搬移至想放置的位置，執行 Compass-app.exe 即可啟動 Compass.app 並看見灰色的小 icon 出現在右下角的工作列中。
   
-![Windows](http://compass.handlino.com/doc/windows.jpg)
+![Windows](http://compass.kkbox.com/doc/windows.jpg)
 
 ### Mac OS
 解壓縮檔案後會得到一個檔名為 Compass.app 的檔案，可搬移至想放置的位置。執行此 app 便可看見灰色的小 icon 出現在 menu bar 。
   
-![Mac OS](http://compass.handlino.com/doc/osx.jpg)
+![Mac OS](http://compass.kkbox.com/doc/osx.jpg)
 
 ### Linux
 解壓縮後會得到一個包含 Compass.app 所需檔案之資料夾，可將此資料夾搬移至想放置的位置，執行 run.sh 即可啟動 Compass.app 並看見灰色的小 icon 出現在 menu bar 。
   
-![Linux](http://compass.handlino.com/doc/linux.jpg)
+![Linux](http://compass.kkbox.com/doc/linux.jpg)
 
 **注: 因 Compass.app 以 Java 撰寫，啟動時可能花費數秒，請耐心等待。**
 
@@ -23,13 +23,13 @@
 ## 建立Compass專案
 欲建立 Compass 專案，只要點擊 Compass.app icon 並點選 "Create Compass Project" -> "compass" -> "project" ，為新專案命名並存檔。
 
-![dialog window](http://compass.handlino.com/doc/create-project.png)
+![dialog window](http://compass.kkbox.com/doc/create-project.png)
 
 畫面上將出現一個對話框顯示專案已成功建立，同時 icon 將轉變為橙色，即表示此專案正在被 "watch" 。可使用任何自己慣用的編輯器來編輯專案，當任何 Sass 檔案被變更後存檔時， Compass.app 便會自動產生出相應的 CSS 檔案。
 
 所產生之專案資料夾結構如下：
 
-![project folder](http://compass.handlino.com/doc/project-folder.png)
+![project folder](http://compass.kkbox.com/doc/project-folder.png)
 
     awesome-website/
       - sass/
@@ -46,7 +46,7 @@
 
 ### Compass
 
-![Compass](http://compass.handlino.com/doc/preference-compass.png)
+![Compass](http://compass.kkbox.com/doc/preference-compass.png)
 
 * Preferred Syntax:   
 Sass 有兩種語法可供選擇，分別是 SCSS (.scss) 和 indented syntax (.sass) 。 Compass.app 兩種語法皆支援，此處所選擇的是專案建立時產生樣板檔案所使用的語法。
@@ -56,13 +56,13 @@ Compass.app 預設使用[最新 stable 版本的 Compass](http://compass-style.o
 
 ### Notification
 
-![Notification](http://compass.handlino.com/doc/preference-notification.png)
+![Notification](http://compass.kkbox.com/doc/preference-notification.png)
 
 Compass.app 支援 [Growl](http://growl.info/) ，可選擇想顯示的通知訊息類型。也可以選擇是否產出 debug 用的log 檔。
 
 ### Services
 
-![Services](http://compass.handlino.com/doc/preference-services.png)
+![Services](http://compass.kkbox.com/doc/preference-services.png)
 
 **Enable Web Server:**   
 若開啟此選項， Compass.app 將在專案路徑啟動一個微 server (WEBrick) ，如此一來便可在瀏覽器中開啟 `http://localhost:24680` 來即時預覽實際上的編輯結果，預設的 port 是 `24680` 但可以自行更換成想要的port。
@@ -87,7 +87,7 @@ LiveReload便會自動作用。
 
 ### History
 
-![History](http://compass.handlino.com/doc/preference-history.png)
+![History](http://compass.kkbox.com/doc/preference-history.png)
 
 點擊 "Clear History" 按鈕會清空最近使用的專案列表。
 
@@ -129,7 +129,7 @@ LiveReload便會自動作用。
 
 符合上述條件之資料夾即可被 watch 。
 
-**注意：若只是想使用 Compass.app 預設設定來編譯 Sass 檔案，可以使用不需 config.rb 的 [Sass Mode](https://github.com/handlino/CompassApp/wiki/Sass-mode)**
+**注意：若只是想使用 Compass.app 預設設定來編譯 Sass 檔案，可以使用不需 config.rb 的 [Sass Mode](https://github.com/KKBOX/CompassApp/wiki/Sass-mode)**
 
 要將改用 Sass 編輯專案之 CSS 時，最好能重新將 CSS 改寫。但若狀況不允許時由於 SCSS 語法為 CSS3 語法的 superset ，直接將 CSS 之副檔名 `.css` 更改為 `.scss` 即可，或在 SCSS 檔案中使用 `@import` 來載入舊檔案。
 
