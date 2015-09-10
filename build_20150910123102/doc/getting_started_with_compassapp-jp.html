@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KKBOX" />
+    <meta property="og:title" content="Compass.app" />
+    <meta property="og:url" content="http://compass.kkbox.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="compile Sass/Compass easily without resorting to command line interface" />
+    <meta property="og:image" content="http://compass.kkbox.com/images/link-thumbnail.png" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Compass.app: compile Sass/Compass easily without resorting to command line interface</title>
+    <link href="/stylesheets/application.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Anton|Bree+Serif|Vollkorn' rel='stylesheet' type='text/css'>
+    <!-- html5shiv http://code.google.com/p/html5shiv/ -->
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <h5 class="slogan">Use Sass / Compass in <strong>OS X, Windows, Linux</strong><img src="/images/icon-os.png"> easily</h5>
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li><a href="/doc/" class="documentation">Documentation</a></li>
+                        <li><a href="https://github.com/KKBOX/CompassApp/wiki/FAQ" class="faq">FAQ</a></li>
+                        <li><a href="https://github.com/KKBOX/CompassApp/issues" class="issues">Issues</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container inner">
+            <h1>Compass.app</h1>
+            <div class="well">
+                We have decided to discontinue the Compass.app &amp; Fire.app projects. You can still get the source code under GPL as always, and we have put the latest binary on GitHub for free. <a href="https://github.com/KKBOX/CompassApp/wiki/Farewell">What happened?</a>
+            </div>
+            <ul class="quick-links">
+                <li>
+                    <iframe src="http://ghbtns.com/github-btn.html?user=KKBOX&repo=compassapp&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110px" height="20px"></iframe>
+                </li>
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://compass.kkbox.com/" data-via="compass_app" data-related="compass_app" data-hashtags="compassapp">Tweet</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/compass_app" class="twitter-follow-button" data-width="225px" data-link-color="#0069D6" data-show-count="true">Follow @compass_app</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container">
+            <div class="container-inner">
+                    
+    <p><a href="/doc/">&larr; documentation</a></p>
+    
+    <h1 id="compassapp">Compass.appの使い方</h1>
+
+<p>Compass.app は Sass と Compass が使いたいけど、コマンドラインを操作するのに抵抗を感じているという方のために作ったGUIツールです。 Windows / Mac OS / Linux 全てに対応しています。 インストールも必要ない、シンプルなツールです。</p>
+
+<p><a href="http://compass.kkbox.com/">Compass.app のオフィシャルサイト</a>で購入できます。購入した後にはダウンロードリンクを含むメールが届きます。 お持ちの OS に対応したものをダウンロードして、ZIP ファイルを解凍してください。</p>
+
+<h3 id="windows">Windows</h3>
+<p>Compass.app に必要なファイルが入ったフォルダが解凍されたら、このフォルダを好きな所に配置して下さい（Dropbox に置いても大丈夫です）。 Compass-app.exe をクリックして起動すると、タスクトレイにグレーアイコンが表示されます。</p>
+
+<p><img src="http://compass.kkbox.com/doc/windows.jpg" alt="Windows" /></p>
+
+<h3 id="mac-os">Mac OS</h3>
+<p>解凍されたCompass.appを、好きな所に配置してください（Dropbox に置いても大丈夫です）。 Compass.app をクリックして起動すると、メニューバーにグレーアイコンが表示されます。</p>
+
+<p><img src="http://compass.kkbox.com/doc/osx.jpg" alt="Mac OS" /></p>
+
+<h3 id="linux">Linux</h3>
+<p>Compass.app に必要なファイルが入ったフォルダが解凍されたら、このフォルダを好きな所に配置して下さい（Dropbox に置いても大丈夫です）。 run.sh を実行すると、メニューバーにグレーアイコンが表示されます。</p>
+
+<p><img src="http://compass.kkbox.com/doc/linux.jpg" alt="Linux" /></p>
+
+<p><strong>注: Compass.app は JAVA で開発した為、起動には多少時間がかかります。数秒ほどお待ちください。</strong></p>
+
+<h2 id="section">プロジェクトを作成</h2>
+
+<p>シンプルな compass プロジェクトを例に説明します。 Compass.app を起動し、アイコンをクリックして、&quot;Create Compass Project&quot; -&gt; &quot;compass&quot; -&gt; &quot;project&quot; を順番に選び、プロジェクトの名前を入力して保存します。</p>
+
+<p><img src="http://compass.kkbox.com/doc/create-project.png" alt="dialog window" /></p>
+
+<p>保存した後、プロジェクト作成の成功を示すダイアログボックスが表示されます。それと同時にアイコンはオレンジ色になります。それは Compass.app がこのプロジェクトを &quot;Watch&quot; しているという意味です。</p>
+
+<p>プロジェクトフォルダの構成は以下のようになっています：</p>
+
+<p><img src="http://compass.kkbox.com/doc/project-folder.png" alt="project folder" /></p>
+
+<pre><code>awesome-website/
+  - sass/
+    - screen.scss
+    - ...
+  - stylesheets/
+    - ...
+  - .sass-cache/   // 隠し sass cache フォルダです。触れないでください。
+  - config.rb      // Compass 設定ファイルです。削除しないでください。
+</code></pre>
+
+<p>これでお気に入りの IDE でプロジェクトが編集できます。 SCSS や Sass ファイルを保存するたびに、自動的に CSS にコンパイルされます。</p>
+
+<h2 id="preferences-">Preferences 解説</h2>
+<p>Compass.app アイコンをクリックして &quot;Preferences&quot; を選ぶと、いろんな設定ができます。</p>
+
+<h3 id="compass">Compass</h3>
+
+<p><img src="http://compass.kkbox.com/doc/preference-compass.png" alt="Compass" /></p>
+
+<ul>
+  <li>
+    <p>Preferred Syntax: <br />
+Sass には SCSS (.scss) と Sass (indented syntax, .sass) という2種類のシンタックスがあります。 Compass.app ではこの両方が使えます。プロジェクトを作成する時、ここでテンプレートのシンタックスを選択してください。</p>
+  </li>
+  <li>
+    <p>Compass Version: <br />
+Compass.app のデフォルトは <a href="http://compass-style.org/CHANGELOG/"> Compass の最新安定版バージョン</a> を使用しています。もし他の Sass / Compass バージョンが使いたい場合、および RubyGems でパッケージ管理したい場合は、 &quot;Custom&quot; を選んでください。
+<strong>注意！上級ユーザーのみにお勧めします！</strong></p>
+  </li>
+</ul>
+
+<h3 id="notification">Notification</h3>
+
+<p><img src="http://compass.kkbox.com/doc/preference-notification.png" alt="Notification" /></p>
+
+<p>Compass.app は <a href="http://growl.info/">Growl</a> に対応しているので、好きなメッセージタイプを選べます。デバッグのためのログ出力もできます。 </p>
+
+<h3 id="services">Services</h3>
+
+<p><img src="http://compass.kkbox.com/doc/preference-services.png" alt="Services" /></p>
+
+<p><strong>Enable Web Server:</strong> <br />
+ここにチェックを入れると、 Compass.app からプロジェクトパスで軽量 Web サーバ (WEBrick) を起動できます。ブラウザに <code>http://localhost:24680</code> と入力すると、実際のプロジェクトページを見ることができます。ポート番号のデフォルト値は変更可能です。</p>
+
+<p><strong>Enable LiveReload:</strong> <br />
+Compass.app 1.2+ は LiveReload をサポートしています。 LiveReload を使用するとファイルを保存した時に自動でブラウザをオートリロードします。ご利用にはブラウザエクステンションのインストールが必要です。 Web サーバと LiveReload を両方チェックすると、 &quot;<a href="https://github.com/livereload/livereload-js">LiveReload.js</a>&quot;　が使えます。(@livereload によりMITライセンスで公開されているものを利用させていただいてます。感謝しています。) <a href="http://livereload.com/">LiveReload 2</a>もお勧めです。</p>
+
+<ul>
+  <li><a href="http://help.livereload.com/kb/general-use/browser-extensions">LiveReloadブラウザエクステンション</a></li>
+  <li>古いバージョン：
+    <ul>
+      <li>Safari: <a href="https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz">Download LiveReload 1.6.2 extension</a>. </li>
+      <li><a href="https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei">Chrome</a></li>
+      <li><a href="https://addons.mozilla.org/zh-TW/firefox/addon/livereload/">Firefox</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>もしブラウザエクステンションを使いたくない場合は、HTMLの中に以下のコードを貼ると LiveReload が自動的に起動します。</p>
+
+<pre><code>&lt;script&gt;document.write('&lt;script src="http://'
++ (location.host || 'localhost').split(':')[0]
++ ':35729/livereload.js?snipver=1"&gt;&lt;/'
++ 'script&gt;')&lt;/script&gt;
+</code></pre>
+
+<h3 id="history">History</h3>
+
+<p><img src="http://compass.kkbox.com/doc/preference-history.png" alt="History" /></p>
+
+<p>&quot;Clear History&quot; ボタンをクリックすると、プロジェクトの履歴リストは削除されます。</p>
+
+<h2 id="options">Options</h2>
+<p>&quot;Watch&quot; しているプロジェクトは、オプション変更できます。出力CSSの整形と &quot;line comments&quot; / &quot;debug info&quot; の付加もできます。</p>
+
+<h2 id="section-1">他の設定</h2>
+<p>ここからは変更が必要になることが多い部分ですが、 &quot;Preferences&quot; および &quot;Options&quot; にはない二箇所の設定について説明します：</p>
+
+<h3 id="section-2">フォルダ名前の変更</h3>
+<p>CSS作成フォルダ名前のデフォルトは &quot;stylesheet&quot; です。もし変更したい場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
+
+<pre><code>css_dir = "stylesheets"
+</code></pre>
+
+<p><code>config.rb</code> を保存した後は、 &quot;Stop Watching …&quot; をクリックしてから、再度このプロジェクトを &quot;Watch&quot; し直すと、CSS作成フォルダの名前が変更できます。</p>
+
+<p><a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関連する Compass helper を使う場合で、かつ画像フォルダの名前が &quot;images&quot; ではない場合は、 <code>config.rb</code> のこの部分を編集してください：</p>
+
+<pre><code>images_dir = "images"
+</code></pre>
+
+<h3 id="section-3">絶対パスを相対パスに変更</h3>
+<p>デフォルトでは、 <a href="http://compass-style.org/reference/compass/helpers/urls/#image-url">image-url()</a> に関連する Compass helper を使う場合は、作成されるCSSは絶対パスになります。相対パスに変更したい場合は、 <code>config.rb</code> の中に</p>
+
+<pre><code>relative_assets = true
+</code></pre>
+
+<p>と入力してください。</p>
+
+<p><strong>注意！ <code>config.rb</code> 更新後は必ず &quot;Stop Watching …&quot; をクリックしてから、再度このプロジェクトを &quot;Watch&quot; し直すと、新しい設定が利用できます。</strong></p>
+
+<p>今の設定を他のプロジェクトにも使いたい場合は、 <code>config.rb</code> を該当するプロジェクトフォルダにコピーしたら使用できます。</p>
+
+<h2 id="compassapp-">既存プロジェクトに Compass.app を使用する場合</h2>
+<p>既存プロジェクトに Compass.app を使用する場合、プロジェクトフォルダの中には以下のものが必要です：</p>
+
+<ul>
+  <li><strong>sass フォルダ</strong>： <code>.scss</code> や <code>.sass</code> ファイル、どれか一つが必要です。 </li>
+  <li><strong>config.rb</strong>： 他のプロジェクトからコピーしてください。必ず中の設定を確認してください。</li>
+</ul>
+
+<p><strong>注: もし初期設定を一切変更せず、ただ Compass.app で Sass をコンパイルしたいだけの場合は、 <code>config.rb</code> が必要ない <a href="https://github.com/KKBOX/CompassApp/wiki/Sass-mode">Sass Mode</a> も使うことができます。</strong></p>
+
+<p>既存プロジェクトのCSSについては、時間があれば SCSS にリライトした方がより良いですが、もし時間がない場合は、 SCSS は CSS3 のシンタックスのスーパーセットなので、簡単に既存 CSS のファイル拡張子 <code>.css</code> を <code>.scss</code> に変更するだけでそのまま使えます。もしくは SCSS <code>@import</code> を使用すればオッケーです。</p>
+
+<h2 id="sass--compass-">SASS &amp; Compass 参考リンク</h2>
+
+<ul>
+  <li><a href="http://sass-lang.com/">Sassの公式Webサイト</a></li>
+  <li><a href="http://compass-style.org/">Compassの公式Webサイト</a></li>
+</ul>
+
+<hr />
+<p><strong>このページに対する<a href="https://twitter.com/ken_c_lo">@ken_c_loさん</a>の修正と意見に感謝します！</strong></p>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="container-inner">
+                <div class="row">
+                    <div class="span9">
+                        <p>Compass.app is brought to you by <a href="http://www.kkbox.com/about/en/">KKBOX</a>. The delivery system is powered by the awesome <a href="http://www.sendowl.com?r=handlino">SendOwl</a> service.</p>
+                    </div>
+                    <div class="span3"><a class="btn" href="http://compass.kkbox.com/assets/mediakit.zip"><i class="icon-download-alt"> </i>Download Media Kit</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.fancybox-1.3.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("a[rel=group]").fancybox({
+                'transitionIn'      : 'none',
+                'transitionOut'     : 'none',
+                'titlePosition'     : 'over',
+                'titleFormat'       : function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });
+        });
+    </script>
+    <script src="/javascripts/jquery.fitvids.js"></script>
+    <script>
+      $(".container").fitVids();
+    </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-282478-18', 'kkbox.com');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

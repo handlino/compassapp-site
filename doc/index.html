@@ -21,6 +21,7 @@
     <!-- html5shiv http://code.google.com/p/html5shiv/ -->
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
+
 </head>
 <body>
     <header>
@@ -43,9 +44,8 @@
         </div>
         <div class="container inner">
             <h1>Compass.app</h1>
-            <div class="buy">
-                <a href="http://transactions.sendowl.com/packages/392/9C032729/purchase" onclick="_gaq.push(['_link', 'http://transactions.digitaldeliveryapp.com/packages/392/purchase']); return false;" class="button"><span>$10</span> Buy Now</a>
-                <p class="donated">30% of sales donated to <a target="_blank" href="http://www.umdf.org/">UMDF</a></p>
+            <div class="well">
+                We have decided to discontinue the Compass.app &amp; Fire.app projects. You can still get the source code under GPL as always, and we have put the latest binary on GitHub for free. <a href="https://github.com/KKBOX/CompassApp/wiki/Farewell">What happened?</a>
             </div>
             <ul class="quick-links">
                 <li>
@@ -86,7 +86,7 @@
             <div class="container-inner">
                 <div class="row">
                     <div class="span9">
-                        <p>Compass.app is brought to you by <a href="http://www.kkbox.com/about/en/">KKBOX</a> The delivery system is powered by the awesome <a href="http://www.digitaldeliveryapp.com?affiliate=kkbox">DigitalDeliveryApp</a> service.</p>
+                        <p>Compass.app is brought to you by <a href="http://www.kkbox.com/about/en/">KKBOX</a>. The delivery system is powered by the awesome <a href="http://www.sendowl.com?r=handlino">SendOwl</a> service.</p>
                     </div>
                     <div class="span3"><a class="btn" href="http://compass.kkbox.com/assets/mediakit.zip"><i class="icon-download-alt"> </i>Download Media Kit</a></div>
                 </div>
@@ -114,18 +114,15 @@
       $(".container").fitVids();
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script type="text/javascript">
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-2945555-1']);
-        _gaq.push(['_setDomainName', 'kkbox.com']);
-        _gaq.push(['_trackPageview']);
-        _gaq.push(['_setAllowLinker', true]);
-        _gaq.push(['_setAllowHash', false]);
-        (function() {
-         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-         })();
-</script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-282478-18', 'kkbox.com');
+      ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
